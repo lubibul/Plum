@@ -19,12 +19,10 @@
     return self;
 }
 
-- (void)setupWithImage:(NSString *)image
+- (void)setupCard
 {
     self.mainView.layer.cornerRadius = 10;
     self.mainView.layer.masksToBounds = YES;
-    
-    self.picture.image = [UIImage imageNamed:image];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

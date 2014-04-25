@@ -25,6 +25,8 @@
 		7309B0541909D9A900ACCD5E /* PlumCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7309B0531909D9A900ACCD5E /* PlumCardCell.m */; };
 		7309B0571909E1DF00ACCD5E /* anna.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7309B0561909E1DF00ACCD5E /* anna.jpg */; };
 		7309B059190A07A500ACCD5E /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 7309B058190A07A500ACCD5E /* background.png */; };
+		7309B05C190A184500ACCD5E /* TradingCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7309B05B190A184500ACCD5E /* TradingCardCell.m */; };
+		7309B05F190A240000ACCD5E /* StoryCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7309B05E190A240000ACCD5E /* StoryCardCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,10 @@
 		7309B0531909D9A900ACCD5E /* PlumCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlumCardCell.m; sourceTree = "<group>"; };
 		7309B0561909E1DF00ACCD5E /* anna.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = anna.jpg; path = Plum/img/anna.jpg; sourceTree = "<group>"; };
 		7309B058190A07A500ACCD5E /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = Plum/img/background.png; sourceTree = "<group>"; };
+		7309B05A190A184500ACCD5E /* TradingCardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradingCardCell.h; sourceTree = "<group>"; };
+		7309B05B190A184500ACCD5E /* TradingCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradingCardCell.m; sourceTree = "<group>"; };
+		7309B05D190A240000ACCD5E /* StoryCardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryCardCell.h; sourceTree = "<group>"; };
+		7309B05E190A240000ACCD5E /* StoryCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryCardCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,10 +131,14 @@
 				7309B0291909D0C800ACCD5E /* PlumAppDelegate.h */,
 				7309B02A1909D0C800ACCD5E /* PlumAppDelegate.m */,
 				7309B02C1909D0C800ACCD5E /* Main.storyboard */,
+				7309B05D190A240000ACCD5E /* StoryCardCell.h */,
+				7309B05E190A240000ACCD5E /* StoryCardCell.m */,
 				7309B02F1909D0C800ACCD5E /* PlumMasterViewController.h */,
 				7309B0301909D0C800ACCD5E /* PlumMasterViewController.m */,
 				7309B0521909D9A900ACCD5E /* PlumCardCell.h */,
 				7309B0531909D9A900ACCD5E /* PlumCardCell.m */,
+				7309B05A190A184500ACCD5E /* TradingCardCell.h */,
+				7309B05B190A184500ACCD5E /* TradingCardCell.m */,
 				7309B0321909D0C800ACCD5E /* PlumDetailViewController.h */,
 				7309B0331909D0C800ACCD5E /* PlumDetailViewController.m */,
 				7309B0351909D0C800ACCD5E /* Images.xcassets */,
@@ -278,10 +288,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7309B02B1909D0C800ACCD5E /* PlumAppDelegate.m in Sources */,
+				7309B05F190A240000ACCD5E /* StoryCardCell.m in Sources */,
 				7309B0341909D0C800ACCD5E /* PlumDetailViewController.m in Sources */,
 				7309B0541909D9A900ACCD5E /* PlumCardCell.m in Sources */,
 				7309B0311909D0C800ACCD5E /* PlumMasterViewController.m in Sources */,
 				7309B0271909D0C800ACCD5E /* main.m in Sources */,
+				7309B05C190A184500ACCD5E /* TradingCardCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>91ED1CBD-DF6F-4AC3-A801-0EEA05377EA9</string>
+	<string>E25C6F54-6A62-4332-8D38-379E05BBC612</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Plum</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>5F1FDD3E-987E-477B-A05C-21AA567BEE3D</key>
-		<string>ssh://github.com/eecs482/dltang.0.git</string>
+		<key>74B719A9-8DC1-426B-8DC9-EE3A7D35EB53</key>
+		<string>ssh://github.com/lubibul/Plum.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Plum/Plum/Plum.xcodeproj/project.xcworkspace</string>
+	<string>Plum.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>5F1FDD3E-987E-477B-A05C-21AA567BEE3D</key>
-		<string>../../../..</string>
+		<key>74B719A9-8DC1-426B-8DC9-EE3A7D35EB53</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/eecs482/dltang.0.git</string>
+	<string>ssh://github.com/lubibul/Plum.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>5F1FDD3E-987E-477B-A05C-21AA567BEE3D</string>
+	<string>74B719A9-8DC1-426B-8DC9-EE3A7D35EB53</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>5F1FDD3E-987E-477B-A05C-21AA567BEE3D</string>
+			<string>74B719A9-8DC1-426B-8DC9-EE3A7D35EB53</string>
 			<key>IDESourceControlWCCName</key>
-			<string>GitHub</string>
+			<string>Plum</string>
 		</dict>
 	</array>
 </dict>

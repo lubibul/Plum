@@ -8,6 +8,8 @@
 
 #import "PlumMasterViewController.h"
 #import "PlumCardCell.h"
+#import "TradingCardCell.h"
+#import "StoryCardCell.h"
 #import "PlumDetailViewController.h"
 
 @interface PlumMasterViewController () {
@@ -16,6 +18,17 @@
 @end
 
 @implementation PlumMasterViewController
+
+- (id)initWithStyle:(UITableViewStyle)style
+{
+    self = [super initWithStyle:style];
+    if (self) {
+        
+        [self.tableView registerClass:[TradingCardCell class] forCellReuseIdentifier:@"TradingCard"];
+        [self.tableView registerClass:[StoryCardCell class] forCellReuseIdentifier:@"StoryCard"];
+    }
+    return self;
+}
 
 - (void)awakeFromNib
 {
@@ -39,7 +52,7 @@
     [cards addObject:@"Bob"];
     [cards addObject:@"Casey"];
     NSLog(@"We have %d cards", cards.count);
-    
+
     self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"background.png"]];
 }
 
@@ -48,16 +61,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-//- (void)insertNewObject:(id)sender
-//{
-//    if (!cards) {
-//        cards = [[NSMutableArray alloc] init];
-//    }
-//    [cards insertObject:[NSDate date] atIndex:0];
-//    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-//    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-//}
 
 #pragma mark - Table View
 
@@ -73,12 +76,28 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"PlumCard";
-    PlumCardCell *cell = (PlumCardCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier
-                                                            forIndexPath:indexPath];
-    NSLog(@"Setting up cell %@", indexPath);
-    [cell setupWithImage:@"anna.jpg"];
-    return cell;
+    static NSString *CellIdentifier;
+    
+    if ([[cards objectAtIndex:indexPath.row] isEqualToString:@"Anna"]) {
+        CellIdentifier = @"TradingCard";
+    } else {
+        CellIdentifier = @"StoryCard";
+    }
+    
+    NSLog(@"Setting up cell %d", indexPath.row);
+    
+     if ([CellIdentifier isEqualToString:@"TradingCard"]) {
+        TradingCardCell *cell = (TradingCardCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier
+                                                                             forIndexPath:indexPath];
+        [cell setupTradingCardWithImage:@"anna.jpg"];
+        return cell;
+    } else {
+        StoryCardCell *cell = (StoryCardCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier
+                                                                                   forIndexPath:indexPath];
+        [cell setupStoryCardWithTitle:@"LuluStory" withPreview:@"Donut lemon drops toffee dragée tiramisu. Jelly tiramisu liquorice candy. Topping candy canes macaroon dessert gummi bears cookie marzipan. Carrot cake chocolate marzipan gummies. Sesame snaps topping bear claw. Soufflé wafer wafer donut cupcake sesame snaps. Tootsie roll toffee jelly beans jelly-o. Macaroon lemon drops cookie icing cake. Lollipop marshmallow cupcake jelly toffee gummi bears lemon drops donut. Jelly beans caramels cookie croissant. Donut muffin tootsie roll unerdwear.com. Pie donut tiramisu dragée. Macaroon lollipop bear claw. Gummi bears candy carrot cake chocolate bar gingerbread caramels. Bonbon oat cake marzipan gingerbread cake sesame snaps."];
+        
+        return cell;
+    }
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath

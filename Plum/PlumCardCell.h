@@ -10,7 +10,7 @@
 
 @interface PlumCardCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIView *mainView;
-@property (weak, nonatomic) IBOutlet UIImageView *picture;
 
-- (void)setupWithImage:(NSString *)image;
+- (void)setupCard;
+
 @end
