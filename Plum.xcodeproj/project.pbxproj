@@ -22,6 +22,9 @@
 		7309B03F1909D0C800ACCD5E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7309B01E1909D0C800ACCD5E /* UIKit.framework */; };
 		7309B0471909D0C800ACCD5E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7309B0451909D0C800ACCD5E /* InfoPlist.strings */; };
 		7309B0491909D0C800ACCD5E /* PlumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7309B0481909D0C800ACCD5E /* PlumTests.m */; };
+		7309B0541909D9A900ACCD5E /* PlumCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7309B0531909D9A900ACCD5E /* PlumCardCell.m */; };
+		7309B0571909E1DF00ACCD5E /* anna.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7309B0561909E1DF00ACCD5E /* anna.jpg */; };
+		7309B059190A07A500ACCD5E /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 7309B058190A07A500ACCD5E /* background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,10 @@
 		7309B0441909D0C800ACCD5E /* PlumTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PlumTests-Info.plist"; sourceTree = "<group>"; };
 		7309B0461909D0C800ACCD5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7309B0481909D0C800ACCD5E /* PlumTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlumTests.m; sourceTree = "<group>"; };
+		7309B0521909D9A900ACCD5E /* PlumCardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlumCardCell.h; sourceTree = "<group>"; };
+		7309B0531909D9A900ACCD5E /* PlumCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlumCardCell.m; sourceTree = "<group>"; };
+		7309B0561909E1DF00ACCD5E /* anna.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = anna.jpg; path = Plum/img/anna.jpg; sourceTree = "<group>"; };
+		7309B058190A07A500ACCD5E /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = Plum/img/background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +127,8 @@
 				7309B02C1909D0C800ACCD5E /* Main.storyboard */,
 				7309B02F1909D0C800ACCD5E /* PlumMasterViewController.h */,
 				7309B0301909D0C800ACCD5E /* PlumMasterViewController.m */,
+				7309B0521909D9A900ACCD5E /* PlumCardCell.h */,
+				7309B0531909D9A900ACCD5E /* PlumCardCell.m */,
 				7309B0321909D0C800ACCD5E /* PlumDetailViewController.h */,
 				7309B0331909D0C800ACCD5E /* PlumDetailViewController.m */,
 				7309B0351909D0C800ACCD5E /* Images.xcassets */,
@@ -131,6 +140,7 @@
 		7309B0211909D0C800ACCD5E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7309B0551909E1C500ACCD5E /* img */,
 				7309B0221909D0C800ACCD5E /* Plum-Info.plist */,
 				7309B0231909D0C800ACCD5E /* InfoPlist.strings */,
 				7309B0261909D0C800ACCD5E /* main.m */,
@@ -155,6 +165,16 @@
 				7309B0451909D0C800ACCD5E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7309B0551909E1C500ACCD5E /* img */ = {
+			isa = PBXGroup;
+			children = (
+				7309B058190A07A500ACCD5E /* background.png */,
+				7309B0561909E1DF00ACCD5E /* anna.jpg */,
+			);
+			name = img;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +255,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7309B0361909D0C800ACCD5E /* Images.xcassets in Resources */,
+				7309B059190A07A500ACCD5E /* background.png in Resources */,
+				7309B0571909E1DF00ACCD5E /* anna.jpg in Resources */,
 				7309B0251909D0C800ACCD5E /* InfoPlist.strings in Resources */,
 				7309B02E1909D0C800ACCD5E /* Main.storyboard in Resources */,
 			);
@@ -257,6 +279,7 @@
 			files = (
 				7309B02B1909D0C800ACCD5E /* PlumAppDelegate.m in Sources */,
 				7309B0341909D0C800ACCD5E /* PlumDetailViewController.m in Sources */,
+				7309B0541909D9A900ACCD5E /* PlumCardCell.m in Sources */,
 				7309B0311909D0C800ACCD5E /* PlumMasterViewController.m in Sources */,
 				7309B0271909D0C800ACCD5E /* main.m in Sources */,
 			);
@@ -463,6 +486,7 @@
 				7309B04E1909D0C800ACCD5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7309B04F1909D0C800ACCD5E /* Build configuration list for PBXNativeTarget "PlumTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +495,7 @@
 				7309B0511909D0C800ACCD5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
