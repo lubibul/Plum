@@ -10,11 +10,16 @@
 
 @implementation PlumAppDelegate
 
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-//    [[UINavigationBar appearance] setTintColor:[UIColor blackColor]];
 //    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:91.0/255.0 green:169.0/255.0 blue:153.0/255.0 alpha:1.0]];
+    
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0x9074a0)];
     
     return YES;
 }

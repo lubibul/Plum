@@ -20,13 +20,15 @@
 
 @implementation PlumMasterViewController
 
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self) {
         
-        [self.tableView registerClass:[TradingCardCell class] forCellReuseIdentifier:@"TradingCard"];
-        [self.tableView registerClass:[StoryCardCell class] forCellReuseIdentifier:@"StoryCard"];
+//        [self.tableView registerClass:[TradingCardCell class] forCellReuseIdentifier:@"TradingCard"];
+//        [self.tableView registerClass:[StoryCardCell class] forCellReuseIdentifier:@"StoryCard"];
     }
     return self;
 }
@@ -56,7 +58,8 @@
     [cards addObject:@"Casey"];
     NSLog(@"We have %d cards", cards.count);
 
-    self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"background.png"]];
+    self.tableView.backgroundColor = UIColorFromRGB(0xdedede);
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"plum_logo.png"]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -89,20 +92,26 @@
     
     NSLog(@"Setting up cell %d", indexPath.row);
     
-     if ([CellIdentifier isEqualToString:@"TradingCard"]) {
-        TradingCardCell *cell = (TradingCardCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier
-                                                                             forIndexPath:indexPath];
+    if ([CellIdentifier isEqualToString:@"TradingCard"]) {
+        TradingCardCell *cell = (TradingCardCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        if (cell == nil) {
+            NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"TradingCardCell" owner:self options:nil];
+            cell = [nib objectAtIndex:0];
+        }
         [cell setupTradingCardWithImage:@"anna.jpg"];
         return cell;
     } else {
-        StoryCardCell *cell = (StoryCardCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier
-                                                                                   forIndexPath:indexPath];
+        StoryCardCell *cell = (StoryCardCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        if (cell == nil) {
+            NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"StoryCardCell" owner:self options:nil];
+            cell = [nib objectAtIndex:0];
+        }
         [cell setupStoryCardWithTitle:@"Fishbones: Chapter 1"
                            withAuthor:@"Jisuk Cho"
                           withPreview:@"Ferris was running.\nHe didn’t run very often and wasn’t what one would call ‘good at it.’ He had only been running for a few blocks and could already feel his legs protesting. Of course, he wasn’t dressed for the occasion, nor had he woken up with a fist in his palm and the firm intent to go for a few laps around his neighborhood. In fact, the only reason that his shoes were pounding so hard against the wet pavement, that his sweater was starting to make him sweat, and that his scarf had fluttered off into a gutter ten yards back, was that he was being chased."];
         
         return cell;
-    }
+    }    
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
