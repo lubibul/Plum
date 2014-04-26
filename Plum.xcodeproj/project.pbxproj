@@ -156,8 +156,6 @@
 				73DAD7AE190C545800027244 /* Cards */,
 				7309B02F1909D0C800ACCD5E /* PlumMasterViewController.h */,
 				7309B0301909D0C800ACCD5E /* PlumMasterViewController.m */,
-				7309B0521909D9A900ACCD5E /* PlumCardCell.h */,
-				7309B0531909D9A900ACCD5E /* PlumCardCell.m */,
 				7309B0321909D0C800ACCD5E /* PlumDetailViewController.h */,
 				7309B0331909D0C800ACCD5E /* PlumDetailViewController.m */,
 				7309B0351909D0C800ACCD5E /* Images.xcassets */,
@@ -233,6 +231,8 @@
 		73DAD7AE190C545800027244 /* Cards */ = {
 			isa = PBXGroup;
 			children = (
+				7309B0521909D9A900ACCD5E /* PlumCardCell.h */,
+				7309B0531909D9A900ACCD5E /* PlumCardCell.m */,
 				73DAD7AF190C5B3700027244 /* StoryCardCell.xib */,
 				73DAD791190C1C8400027244 /* TradingCardCell.xib */,
 				7309B05D190A240000ACCD5E /* StoryCardCell.h */,

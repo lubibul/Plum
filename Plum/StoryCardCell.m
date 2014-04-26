@@ -14,7 +14,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
+        
     }
     return self;
 }
@@ -28,6 +28,10 @@
     self.storyTitle.text = title;
     self.storyAuthor.text = author;
     self.storyPreview.text = preview;
+
+    self.storyReadMoreLabel.layer.masksToBounds = YES;
+    self.storyReadMoreLabel.layer.cornerRadius = 10;
+
 }
 
 

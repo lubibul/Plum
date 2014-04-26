@@ -22,7 +22,12 @@
 - (void)setupCard
 {
     self.mainView.layer.cornerRadius = 10;
-    self.mainView.layer.masksToBounds = YES;
+//    self.mainView.layer.masksToBounds = YES;
+    
+    [self.mainView.layer setShadowColor:[UIColor colorWithWhite:0.75 alpha:1].CGColor];
+    [self.mainView.layer setShadowOpacity:1.0];
+    [self.mainView.layer setShadowRadius:0.0];
+    [self.mainView.layer setShadowOffset:CGSizeMake(0.0, 5.0)];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
