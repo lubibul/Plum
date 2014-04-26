@@ -98,7 +98,7 @@
             NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"TradingCardCell" owner:self options:nil];
             cell = [nib objectAtIndex:0];
         }
-        [cell setupTradingCardWithImage:@"anna.jpg"];
+        [cell setupTradingCardWithImage:@"dolrea.png"];
         return cell;
     } else {
         StoryCardCell *cell = (StoryCardCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];

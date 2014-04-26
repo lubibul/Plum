@@ -35,6 +35,7 @@
 		73DAD7A6190C4AB500027244 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73DAD7A4190C4AB500027244 /* menu@2x.png */; };
 		73DAD7A9190C4D1A00027244 /* plum_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 73DAD7A7190C4D1A00027244 /* plum_logo.png */; };
 		73DAD7AA190C4D1A00027244 /* plum_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73DAD7A8190C4D1A00027244 /* plum_logo@2x.png */; };
+		73DAD7AD190C540D00027244 /* dolrea.png in Resources */ = {isa = PBXBuildFile; fileRef = 73DAD7AC190C540D00027244 /* dolrea.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		73DAD7A4190C4AB500027244 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu@2x.png"; path = "Plum/img/menu@2x.png"; sourceTree = "<group>"; };
 		73DAD7A7190C4D1A00027244 /* plum_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plum_logo.png; path = Plum/img/plum_logo.png; sourceTree = "<group>"; };
 		73DAD7A8190C4D1A00027244 /* plum_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "plum_logo@2x.png"; path = "Plum/img/plum_logo@2x.png"; sourceTree = "<group>"; };
+		73DAD7AC190C540D00027244 /* dolrea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dolrea.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,16 +153,11 @@
 				7309B02C1909D0C800ACCD5E /* Main.storyboard */,
 				73DAD79E190C3DBA00027244 /* SidebarViewController.h */,
 				73DAD79F190C3DBA00027244 /* SidebarViewController.m */,
-				73DAD78F190C1AC700027244 /* StoryCardCell.xib */,
-				73DAD791190C1C8400027244 /* TradingCardCell.xib */,
-				7309B05D190A240000ACCD5E /* StoryCardCell.h */,
-				7309B05E190A240000ACCD5E /* StoryCardCell.m */,
+				73DAD7AE190C545800027244 /* Cards */,
 				7309B02F1909D0C800ACCD5E /* PlumMasterViewController.h */,
 				7309B0301909D0C800ACCD5E /* PlumMasterViewController.m */,
 				7309B0521909D9A900ACCD5E /* PlumCardCell.h */,
 				7309B0531909D9A900ACCD5E /* PlumCardCell.m */,
-				7309B05A190A184500ACCD5E /* TradingCardCell.h */,
-				7309B05B190A184500ACCD5E /* TradingCardCell.m */,
 				7309B0321909D0C800ACCD5E /* PlumDetailViewController.h */,
 				7309B0331909D0C800ACCD5E /* PlumDetailViewController.m */,
 				7309B0351909D0C800ACCD5E /* Images.xcassets */,
@@ -172,6 +169,7 @@
 		7309B0211909D0C800ACCD5E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				73DAD7AB190C53F400027244 /* content */,
 				73DAD796190C3B6500027244 /* Library */,
 				7309B0551909E1C500ACCD5E /* img */,
 				7309B0221909D0C800ACCD5E /* Plum-Info.plist */,
@@ -222,6 +220,27 @@
 			);
 			name = Library;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		73DAD7AB190C53F400027244 /* content */ = {
+			isa = PBXGroup;
+			children = (
+				73DAD7AC190C540D00027244 /* dolrea.png */,
+			);
+			name = content;
+			sourceTree = "<group>";
+		};
+		73DAD7AE190C545800027244 /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				73DAD78F190C1AC700027244 /* StoryCardCell.xib */,
+				73DAD791190C1C8400027244 /* TradingCardCell.xib */,
+				7309B05D190A240000ACCD5E /* StoryCardCell.h */,
+				7309B05E190A240000ACCD5E /* StoryCardCell.m */,
+				7309B05A190A184500ACCD5E /* TradingCardCell.h */,
+				7309B05B190A184500ACCD5E /* TradingCardCell.m */,
+			);
+			name = Cards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +328,7 @@
 				73DAD792190C1C8400027244 /* TradingCardCell.xib in Resources */,
 				73DAD7AA190C4D1A00027244 /* plum_logo@2x.png in Resources */,
 				73DAD7A5190C4AB500027244 /* menu.png in Resources */,
+				73DAD7AD190C540D00027244 /* dolrea.png in Resources */,
 				7309B0571909E1DF00ACCD5E /* anna.jpg in Resources */,
 				7309B0251909D0C800ACCD5E /* InfoPlist.strings in Resources */,
 				7309B02E1909D0C800ACCD5E /* Main.storyboard in Resources */,
