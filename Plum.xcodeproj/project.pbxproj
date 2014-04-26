@@ -27,7 +27,6 @@
 		7309B059190A07A500ACCD5E /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 7309B058190A07A500ACCD5E /* background.png */; };
 		7309B05C190A184500ACCD5E /* TradingCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7309B05B190A184500ACCD5E /* TradingCardCell.m */; };
 		7309B05F190A240000ACCD5E /* StoryCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7309B05E190A240000ACCD5E /* StoryCardCell.m */; };
-		73DAD790190C1AC700027244 /* StoryCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73DAD78F190C1AC700027244 /* StoryCardCell.xib */; };
 		73DAD792190C1C8400027244 /* TradingCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73DAD791190C1C8400027244 /* TradingCardCell.xib */; };
 		73DAD799190C3B7600027244 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DAD798190C3B7600027244 /* SWRevealViewController.m */; };
 		73DAD7A0190C3DBA00027244 /* SidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DAD79F190C3DBA00027244 /* SidebarViewController.m */; };
@@ -36,6 +35,7 @@
 		73DAD7A9190C4D1A00027244 /* plum_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 73DAD7A7190C4D1A00027244 /* plum_logo.png */; };
 		73DAD7AA190C4D1A00027244 /* plum_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73DAD7A8190C4D1A00027244 /* plum_logo@2x.png */; };
 		73DAD7AD190C540D00027244 /* dolrea.png in Resources */ = {isa = PBXBuildFile; fileRef = 73DAD7AC190C540D00027244 /* dolrea.png */; };
+		73DAD7B0190C5B3700027244 /* StoryCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73DAD7AF190C5B3700027244 /* StoryCardCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +78,6 @@
 		7309B05B190A184500ACCD5E /* TradingCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradingCardCell.m; sourceTree = "<group>"; };
 		7309B05D190A240000ACCD5E /* StoryCardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryCardCell.h; sourceTree = "<group>"; };
 		7309B05E190A240000ACCD5E /* StoryCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryCardCell.m; sourceTree = "<group>"; };
-		73DAD78F190C1AC700027244 /* StoryCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StoryCardCell.xib; path = ../StoryCardCell.xib; sourceTree = "<group>"; };
 		73DAD791190C1C8400027244 /* TradingCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradingCardCell.xib; sourceTree = "<group>"; };
 		73DAD797190C3B7600027244 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = Plum/Library/SWRevealViewController.h; sourceTree = "<group>"; };
 		73DAD798190C3B7600027244 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = Plum/Library/SWRevealViewController.m; sourceTree = "<group>"; };
@@ -89,6 +88,7 @@
 		73DAD7A7190C4D1A00027244 /* plum_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plum_logo.png; path = Plum/img/plum_logo.png; sourceTree = "<group>"; };
 		73DAD7A8190C4D1A00027244 /* plum_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "plum_logo@2x.png"; path = "Plum/img/plum_logo@2x.png"; sourceTree = "<group>"; };
 		73DAD7AC190C540D00027244 /* dolrea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dolrea.png; sourceTree = "<group>"; };
+		73DAD7AF190C5B3700027244 /* StoryCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoryCardCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,7 +233,7 @@
 		73DAD7AE190C545800027244 /* Cards */ = {
 			isa = PBXGroup;
 			children = (
-				73DAD78F190C1AC700027244 /* StoryCardCell.xib */,
+				73DAD7AF190C5B3700027244 /* StoryCardCell.xib */,
 				73DAD791190C1C8400027244 /* TradingCardCell.xib */,
 				7309B05D190A240000ACCD5E /* StoryCardCell.h */,
 				7309B05E190A240000ACCD5E /* StoryCardCell.m */,
@@ -321,9 +321,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				73DAD7A6190C4AB500027244 /* menu@2x.png in Resources */,
+				73DAD7B0190C5B3700027244 /* StoryCardCell.xib in Resources */,
 				7309B0361909D0C800ACCD5E /* Images.xcassets in Resources */,
 				73DAD7A9190C4D1A00027244 /* plum_logo.png in Resources */,
-				73DAD790190C1AC700027244 /* StoryCardCell.xib in Resources */,
 				7309B059190A07A500ACCD5E /* background.png in Resources */,
 				73DAD792190C1C8400027244 /* TradingCardCell.xib in Resources */,
 				73DAD7AA190C4D1A00027244 /* plum_logo@2x.png in Resources */,
