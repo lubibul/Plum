@@ -29,6 +29,10 @@
 		7309B05F190A240000ACCD5E /* StoryCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7309B05E190A240000ACCD5E /* StoryCardCell.m */; };
 		73DAD790190C1AC700027244 /* StoryCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73DAD78F190C1AC700027244 /* StoryCardCell.xib */; };
 		73DAD792190C1C8400027244 /* TradingCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73DAD791190C1C8400027244 /* TradingCardCell.xib */; };
+		73DAD799190C3B7600027244 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DAD798190C3B7600027244 /* SWRevealViewController.m */; };
+		73DAD79C190C3C8A00027244 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 73DAD79A190C3C8A00027244 /* menu.png */; };
+		73DAD79D190C3C8A00027244 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73DAD79B190C3C8A00027244 /* menu@2x.png */; };
+		73DAD7A0190C3DBA00027244 /* SidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DAD79F190C3DBA00027244 /* SidebarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,12 @@
 		7309B05E190A240000ACCD5E /* StoryCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryCardCell.m; sourceTree = "<group>"; };
 		73DAD78F190C1AC700027244 /* StoryCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StoryCardCell.xib; path = ../StoryCardCell.xib; sourceTree = "<group>"; };
 		73DAD791190C1C8400027244 /* TradingCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradingCardCell.xib; sourceTree = "<group>"; };
+		73DAD797190C3B7600027244 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = Plum/Library/SWRevealViewController.h; sourceTree = "<group>"; };
+		73DAD798190C3B7600027244 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = Plum/Library/SWRevealViewController.m; sourceTree = "<group>"; };
+		73DAD79A190C3C8A00027244 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		73DAD79B190C3C8A00027244 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
+		73DAD79E190C3DBA00027244 /* SidebarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidebarViewController.h; sourceTree = "<group>"; };
+		73DAD79F190C3DBA00027244 /* SidebarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidebarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +145,8 @@
 				7309B0291909D0C800ACCD5E /* PlumAppDelegate.h */,
 				7309B02A1909D0C800ACCD5E /* PlumAppDelegate.m */,
 				7309B02C1909D0C800ACCD5E /* Main.storyboard */,
+				73DAD79E190C3DBA00027244 /* SidebarViewController.h */,
+				73DAD79F190C3DBA00027244 /* SidebarViewController.m */,
 				73DAD78F190C1AC700027244 /* StoryCardCell.xib */,
 				73DAD791190C1C8400027244 /* TradingCardCell.xib */,
 				7309B05D190A240000ACCD5E /* StoryCardCell.h */,
@@ -156,6 +168,7 @@
 		7309B0211909D0C800ACCD5E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				73DAD796190C3B6500027244 /* Library */,
 				7309B0551909E1C500ACCD5E /* img */,
 				7309B0221909D0C800ACCD5E /* Plum-Info.plist */,
 				7309B0231909D0C800ACCD5E /* InfoPlist.strings */,
@@ -186,10 +199,22 @@
 		7309B0551909E1C500ACCD5E /* img */ = {
 			isa = PBXGroup;
 			children = (
+				73DAD79A190C3C8A00027244 /* menu.png */,
+				73DAD79B190C3C8A00027244 /* menu@2x.png */,
 				7309B058190A07A500ACCD5E /* background.png */,
 				7309B0561909E1DF00ACCD5E /* anna.jpg */,
 			);
 			name = img;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		73DAD796190C3B6500027244 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				73DAD797190C3B7600027244 /* SWRevealViewController.h */,
+				73DAD798190C3B7600027244 /* SWRevealViewController.m */,
+			);
+			name = Library;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -270,9 +295,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73DAD79C190C3C8A00027244 /* menu.png in Resources */,
 				7309B0361909D0C800ACCD5E /* Images.xcassets in Resources */,
 				73DAD790190C1AC700027244 /* StoryCardCell.xib in Resources */,
 				7309B059190A07A500ACCD5E /* background.png in Resources */,
+				73DAD79D190C3C8A00027244 /* menu@2x.png in Resources */,
 				73DAD792190C1C8400027244 /* TradingCardCell.xib in Resources */,
 				7309B0571909E1DF00ACCD5E /* anna.jpg in Resources */,
 				7309B0251909D0C800ACCD5E /* InfoPlist.strings in Resources */,
@@ -295,9 +322,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73DAD7A0190C3DBA00027244 /* SidebarViewController.m in Sources */,
 				7309B02B1909D0C800ACCD5E /* PlumAppDelegate.m in Sources */,
 				7309B05F190A240000ACCD5E /* StoryCardCell.m in Sources */,
 				7309B0341909D0C800ACCD5E /* PlumDetailViewController.m in Sources */,
+				73DAD799190C3B7600027244 /* SWRevealViewController.m in Sources */,
 				7309B0541909D9A900ACCD5E /* PlumCardCell.m in Sources */,
 				7309B0311909D0C800ACCD5E /* PlumMasterViewController.m in Sources */,
 				7309B0271909D0C800ACCD5E /* main.m in Sources */,

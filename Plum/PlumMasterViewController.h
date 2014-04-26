@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface PlumMasterViewController : UITableViewController
-
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 @end

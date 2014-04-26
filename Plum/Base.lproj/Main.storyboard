@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="rS3-R9-Ivy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="C4b-Yd-8oG">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -19,6 +19,65 @@
             </objects>
             <point key="canvasLocation" x="-1" y="64"/>
         </scene>
+        <!--Reveal View Controller-->
+        <scene sceneID="OjB-vZ-ZjH">
+            <objects>
+                <viewController id="C4b-Yd-8oG" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m7C-bC-Zkh"/>
+                        <viewControllerLayoutGuide type="bottom" id="GT3-Z7-9pv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CkL-KS-kDc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="drg-Jo-tv8" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegue" id="cAU-c5-5SK"/>
+                        <segue destination="rS3-R9-Ivy" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegue" id="2cm-oH-Mrl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EMU-rr-IMT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-655" y="-164"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="UqJ-rc-XWM">
+            <objects>
+                <tableViewController id="drg-Jo-tv8" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="2fq-qu-A6i">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="title" id="PPv-KC-4Vh">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PPv-KC-4Vh" id="PAz-Ul-28x">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Plum Magazine" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nC4-cD-EZb">
+                                            <rect key="frame" x="20" y="11" width="280" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="drg-Jo-tv8" id="5ns-mF-QpB"/>
+                            <outlet property="delegate" destination="drg-Jo-tv8" id="lSS-3R-Boa"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fa1-Rn-koD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="-618"/>
+        </scene>
         <!--Plum Master View Controller - Master-->
         <scene sceneID="VgW-fR-Quf">
             <objects>
@@ -27,6 +86,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TradingCard" rowHeight="440" id="m0d-ak-lc9" customClass="TradingCardCell">
                                 <rect key="frame" x="0.0" y="86" width="320" height="440"/>
@@ -90,7 +150,7 @@
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="247" translatesAutoresizingMaskIntoConstraints="NO" id="7sg-2g-COX">
                                                     <rect key="frame" x="20" y="78" width="247" height="284"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <mutableString key="text">Fruitcake macaroon sesame snaps chocolate cake. Candy canes marshmallow gummi bears carrot cake danish. Soufflé applicake apple pie tootsie roll jelly dessert dragée soufflé. Tart chocolate cake cupcake powder danish biscuit. Donut bonbon pie. Sweet roll powder gummies cookie cake unerdwear.com muffin sweet roll. Powder cheesecake pudding bear claw biscuit. Gummies chocolate cake icing bear claw jelly beans bear claw cake. Pudding cookie gummi bears soufflé. Chocolate marzipan toffee wafer chocolate cake unerdwear.com marzipan liquorice. Oat cake ice cream applicake. Pastry tart muffin cheesecake sesame snaps halvah. Jujubes jelly beans dessert caramels sugar plum marshmallow dessert lemon drops.</mutableString>
+                                                    <string key="text">Fruitcake macaroon sesame snaps chocolate cake. Candy canes marshmallow gummi bears carrot cake danish. Soufflé applicake apple pie tootsie roll jelly dessert dragée soufflé. Tart chocolate cake cupcake powder danish biscuit. Donut bonbon pie. Sweet roll powder gummies cookie cake unerdwear.com muffin sweet roll. Powder cheesecake pudding bear claw biscuit. Gummies chocolate cake icing bear claw jelly beans bear claw cake. Pudding cookie gummi bears soufflé. Chocolate marzipan toffee wafer chocolate cake unerdwear.com marzipan liquorice. Oat cake ice cream applicake. Pastry tart muffin cheesecake sesame snaps halvah. Jujubes jelly beans dessert caramels sugar plum marshmallow dessert lemon drops.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -116,7 +176,12 @@
                             <outlet property="delegate" destination="pGg-6v-bdr" id="Y6K-Cp-Qkv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Master" id="tQt-TN-PWz"/>
+                    <navigationItem key="navigationItem" id="tQt-TN-PWz">
+                        <barButtonItem key="leftBarButtonItem" image="menu.png" id="Pgm-0x-Kwq"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="sidebarButton" destination="Pgm-0x-Kwq" id="WZa-mI-NbX"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Cn-md-YlS" sceneMemberID="firstResponder"/>
             </objects>
@@ -159,6 +224,9 @@
             <point key="canvasLocation" x="902" y="64"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="menu.png" width="28" height="20"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
