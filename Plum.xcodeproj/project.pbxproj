@@ -27,6 +27,8 @@
 		7309B059190A07A500ACCD5E /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 7309B058190A07A500ACCD5E /* background.png */; };
 		7309B05C190A184500ACCD5E /* TradingCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7309B05B190A184500ACCD5E /* TradingCardCell.m */; };
 		7309B05F190A240000ACCD5E /* StoryCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7309B05E190A240000ACCD5E /* StoryCardCell.m */; };
+		73DAD790190C1AC700027244 /* StoryCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73DAD78F190C1AC700027244 /* StoryCardCell.xib */; };
+		73DAD792190C1C8400027244 /* TradingCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73DAD791190C1C8400027244 /* TradingCardCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		7309B05B190A184500ACCD5E /* TradingCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradingCardCell.m; sourceTree = "<group>"; };
 		7309B05D190A240000ACCD5E /* StoryCardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryCardCell.h; sourceTree = "<group>"; };
 		7309B05E190A240000ACCD5E /* StoryCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryCardCell.m; sourceTree = "<group>"; };
+		73DAD78F190C1AC700027244 /* StoryCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StoryCardCell.xib; path = ../StoryCardCell.xib; sourceTree = "<group>"; };
+		73DAD791190C1C8400027244 /* TradingCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradingCardCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,8 @@
 				7309B0291909D0C800ACCD5E /* PlumAppDelegate.h */,
 				7309B02A1909D0C800ACCD5E /* PlumAppDelegate.m */,
 				7309B02C1909D0C800ACCD5E /* Main.storyboard */,
+				73DAD78F190C1AC700027244 /* StoryCardCell.xib */,
+				73DAD791190C1C8400027244 /* TradingCardCell.xib */,
 				7309B05D190A240000ACCD5E /* StoryCardCell.h */,
 				7309B05E190A240000ACCD5E /* StoryCardCell.m */,
 				7309B02F1909D0C800ACCD5E /* PlumMasterViewController.h */,
@@ -265,7 +271,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7309B0361909D0C800ACCD5E /* Images.xcassets in Resources */,
+				73DAD790190C1AC700027244 /* StoryCardCell.xib in Resources */,
 				7309B059190A07A500ACCD5E /* background.png in Resources */,
+				73DAD792190C1C8400027244 /* TradingCardCell.xib in Resources */,
 				7309B0571909E1DF00ACCD5E /* anna.jpg in Resources */,
 				7309B0251909D0C800ACCD5E /* InfoPlist.strings in Resources */,
 				7309B02E1909D0C800ACCD5E /* Main.storyboard in Resources */,

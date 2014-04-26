@@ -10,7 +10,11 @@
 
 @interface StoryCardCell : PlumCardCell
 @property (strong, nonatomic) IBOutlet UILabel *storyTitle;
+@property (strong, nonatomic) IBOutlet UILabel *storyAuthor;
 @property (strong, nonatomic) IBOutlet UILabel *storyPreview;
+@property (strong, nonatomic) IBOutlet UILabel *storyReadMoreLabel;
 
-- (void)setupStoryCardWithTitle:(NSString *)title withPreview:(NSString *)preview;
+- (void)setupStoryCardWithTitle:(NSString *)title
+                     withAuthor:(NSString *)author
+                    withPreview:(NSString *)preview;
 @end

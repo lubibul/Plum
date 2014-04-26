@@ -19,11 +19,14 @@
     return self;
 }
 
-- (void)setupStoryCardWithTitle:(NSString *)title withPreview:(NSString *)preview
+- (void)setupStoryCardWithTitle:(NSString *)title
+                     withAuthor:(NSString *)author
+                    withPreview:(NSString *)preview
 {
     [self setupCard];
     
     self.storyTitle.text = title;
+    self.storyAuthor.text = author;
     self.storyPreview.text = preview;
 }
 

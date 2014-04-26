@@ -94,7 +94,9 @@
     } else {
         StoryCardCell *cell = (StoryCardCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier
                                                                                    forIndexPath:indexPath];
-        [cell setupStoryCardWithTitle:@"LuluStory" withPreview:@"Donut lemon drops toffee dragée tiramisu. Jelly tiramisu liquorice candy. Topping candy canes macaroon dessert gummi bears cookie marzipan. Carrot cake chocolate marzipan gummies. Sesame snaps topping bear claw. Soufflé wafer wafer donut cupcake sesame snaps. Tootsie roll toffee jelly beans jelly-o. Macaroon lemon drops cookie icing cake. Lollipop marshmallow cupcake jelly toffee gummi bears lemon drops donut. Jelly beans caramels cookie croissant. Donut muffin tootsie roll unerdwear.com. Pie donut tiramisu dragée. Macaroon lollipop bear claw. Gummi bears candy carrot cake chocolate bar gingerbread caramels. Bonbon oat cake marzipan gingerbread cake sesame snaps."];
+        [cell setupStoryCardWithTitle:@"Fishbones: Chapter 1"
+                           withAuthor:@"Jisuk Cho"
+                          withPreview:@"Ferris was running.\nHe didn’t run very often and wasn’t what one would call ‘good at it.’ He had only been running for a few blocks and could already feel his legs protesting. Of course, he wasn’t dressed for the occasion, nor had he woken up with a fist in his palm and the firm intent to go for a few laps around his neighborhood. In fact, the only reason that his shoes were pounding so hard against the wet pavement, that his sweater was starting to make him sweat, and that his scarf had fluttered off into a gutter ten yards back, was that he was being chased."];
         
         return cell;
     }
