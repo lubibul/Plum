@@ -22,11 +22,18 @@
 }
 
 - (void)setupTradingCardWithImage:(NSString *)image
+                         withName:(NSString *)name
+                     withSubtitle:(NSString *)subtitle
+                  withDescription:(NSString *)description
 {
     [self setupCard];
     
     self.tradingPicture.backgroundColor = (UIColorFromRGB(0xf1f1f1));
     self.tradingPicture.image = [UIImage imageNamed:image];
+    
+    self.nameLabel.text = name;
+    self.subtitleLabel.text = subtitle;
+    self.descriptionLabel.text = description;
 }
 
 @end

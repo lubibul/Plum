@@ -28,7 +28,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeI-Hf-D8I">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeI-Hf-D8I">
                                 <rect key="frame" x="20" y="296" width="165" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -47,7 +47,10 @@
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
+                <outlet property="descriptionLabel" destination="hlW-oo-PTJ" id="fZ6-wM-nfM"/>
                 <outlet property="mainView" destination="1gs-fF-hIb" id="nx1-xv-2Vq"/>
+                <outlet property="nameLabel" destination="R7p-1a-xtV" id="e2d-7N-HQb"/>
+                <outlet property="subtitleLabel" destination="KeI-Hf-D8I" id="9fU-KR-jhb"/>
                 <outlet property="tradingPicture" destination="kbW-uW-8wE" id="NVQ-ZQ-SdG"/>
             </connections>
         </tableViewCell>

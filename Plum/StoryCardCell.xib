@@ -43,7 +43,7 @@
                                 <rect key="frame" x="20" y="70" width="247" height="292"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Fruitcake macaroon sesame snaps chocolate cake. Candy canes marshmallow gummi bears carrot cake danish. Soufflé applicake apple pie tootsie roll jelly dessert dragée soufflé. Tart chocolate cake cupcake powder danish biscuit. Donut bonbon pie. Sweet roll powder gummies cookie cake unerdwear.com muffin sweet roll. Powder cheesecake pudding bear claw biscuit. Gummies chocolate cake icing bear claw jelly beans bear claw cake. Pudding cookie gummi bears soufflé. Chocolate marzipan toffee wafer chocolate cake unerdwear.com marzipan liquorice. Oat cake ice cream applicake. Pastry tart muffin cheesecake sesame snaps halvah. Jujubes jelly beans dessert caramels sugar plum marshmallow dessert lemon drops.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>

@@ -98,7 +98,10 @@
             NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"TradingCardCell" owner:self options:nil];
             cell = [nib objectAtIndex:0];
         }
-        [cell setupTradingCardWithImage:@"dolrea.png"];
+        [cell setupTradingCardWithImage:@"dolrea.png"
+                               withName:@"Dolrea"
+                           withSubtitle:@"Eye Type"
+                        withDescription:@"The Dolrea is a land creature that enjoys hot days in the sun and cool baths in the evening."];
         return cell;
     } else {
         StoryCardCell *cell = (StoryCardCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];

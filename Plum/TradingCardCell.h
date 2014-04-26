@@ -10,6 +10,12 @@
 
 @interface TradingCardCell : PlumCardCell
 @property (weak, nonatomic) IBOutlet UIImageView *tradingPicture;
+@property (strong, nonatomic) IBOutlet UILabel *nameLabel;
+@property (strong, nonatomic) IBOutlet UILabel *subtitleLabel;
+@property (strong, nonatomic) IBOutlet UILabel *descriptionLabel;
 
-- (void)setupTradingCardWithImage:(NSString *)image;
+- (void)setupTradingCardWithImage:(NSString *)image
+                         withName:(NSString *)name
+                     withSubtitle:(NSString *)subtitle
+                  withDescription:(NSString *)description;
 @end
