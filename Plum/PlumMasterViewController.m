@@ -26,7 +26,6 @@
 {
     self = [super initWithStyle:style];
     if (self) {
-        
 //        [self.tableView registerClass:[TradingCardCell class] forCellReuseIdentifier:@"TradingCard"];
 //        [self.tableView registerClass:[StoryCardCell class] forCellReuseIdentifier:@"StoryCard"];
     }
@@ -120,24 +119,27 @@
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
-    return YES;
+    return NO;
 }
 
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [cards removeObjectAtIndex:indexPath.row];
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+    if ([[cards objectAtIndex:indexPath.row] isEqualToString:@"Anna"]) {
+        [self  performSegueWithIdentifier:@"tradingDetail" sender:self];
+    } else {
+        [self  performSegueWithIdentifier:@"storyDetail" sender:self];
     }
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"showDetail"]) {
+    if ([[segue identifier] isEqualToString:@"tradingDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = cards[indexPath.row];
+        NSString *object = cards[indexPath.row];
+        [[segue destinationViewController] setDetailItem:object];
+    } else if ([[segue identifier] isEqualToString:@"storyDetail"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        NSString *object = cards[indexPath.row];
         [[segue destinationViewController] setDetailItem:object];
     }
 }
