@@ -13,6 +13,8 @@
 #import "StoryCardCell.h"
 #import "PlumDetailViewController.h"
 
+#import <Parse/Parse.h>
+
 @interface PlumMasterViewController () {
     NSMutableArray *cards;
 }
@@ -26,8 +28,7 @@
 {
     self = [super initWithStyle:style];
     if (self) {
-//        [self.tableView registerClass:[TradingCardCell class] forCellReuseIdentifier:@"TradingCard"];
-//        [self.tableView registerClass:[StoryCardCell class] forCellReuseIdentifier:@"StoryCard"];
+        // custom initialization
     }
     return self;
 }

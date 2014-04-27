@@ -28,6 +28,16 @@
 		7309B05C190A184500ACCD5E /* TradingCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7309B05B190A184500ACCD5E /* TradingCardCell.m */; };
 		7309B05F190A240000ACCD5E /* StoryCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7309B05E190A240000ACCD5E /* StoryCardCell.m */; };
 		731E212F190D74B900C02B6D /* CardFlipSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 731E212E190D74B900C02B6D /* CardFlipSegue.m */; };
+		73455170190DC71500F55D98 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7345516F190DC71500F55D98 /* Parse.framework */; };
+		73455172190DC74000F55D98 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73455171190DC74000F55D98 /* AudioToolbox.framework */; };
+		73455174190DC74500F55D98 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73455173190DC74500F55D98 /* CFNetwork.framework */; };
+		73455176190DC74F00F55D98 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73455175190DC74F00F55D98 /* CoreLocation.framework */; };
+		73455178190DC75400F55D98 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 73455177190DC75400F55D98 /* libz.dylib */; };
+		7345517A190DC75900F55D98 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73455179190DC75900F55D98 /* MobileCoreServices.framework */; };
+		7345517C190DC75E00F55D98 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7345517B190DC75E00F55D98 /* QuartzCore.framework */; };
+		7345517E190DC76300F55D98 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7345517D190DC76300F55D98 /* Security.framework */; };
+		73455180190DC76C00F55D98 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7345517F190DC76C00F55D98 /* StoreKit.framework */; };
+		73455182190DC77200F55D98 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73455181190DC77200F55D98 /* SystemConfiguration.framework */; };
 		73DAD792190C1C8400027244 /* TradingCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73DAD791190C1C8400027244 /* TradingCardCell.xib */; };
 		73DAD799190C3B7600027244 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DAD798190C3B7600027244 /* SWRevealViewController.m */; };
 		73DAD7A0190C3DBA00027244 /* SidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DAD79F190C3DBA00027244 /* SidebarViewController.m */; };
@@ -79,8 +89,18 @@
 		7309B05B190A184500ACCD5E /* TradingCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradingCardCell.m; sourceTree = "<group>"; };
 		7309B05D190A240000ACCD5E /* StoryCardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryCardCell.h; sourceTree = "<group>"; };
 		7309B05E190A240000ACCD5E /* StoryCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryCardCell.m; sourceTree = "<group>"; };
-		731E212D190D74B900C02B6D /* CardFlipSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardFlipSegue.h; sourceTree = "<group>"; };
-		731E212E190D74B900C02B6D /* CardFlipSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardFlipSegue.m; sourceTree = "<group>"; };
+		731E212D190D74B900C02B6D /* CardFlipSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardFlipSegue.h; path = Plum/CardFlipSegue.h; sourceTree = "<group>"; };
+		731E212E190D74B900C02B6D /* CardFlipSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardFlipSegue.m; path = Plum/CardFlipSegue.m; sourceTree = "<group>"; };
+		7345516F190DC71500F55D98 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		73455171190DC74000F55D98 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		73455173190DC74500F55D98 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		73455175190DC74F00F55D98 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		73455177190DC75400F55D98 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		73455179190DC75900F55D98 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		7345517B190DC75E00F55D98 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7345517D190DC76300F55D98 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7345517F190DC76C00F55D98 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		73455181190DC77200F55D98 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		73DAD791190C1C8400027244 /* TradingCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradingCardCell.xib; sourceTree = "<group>"; };
 		73DAD797190C3B7600027244 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = Plum/Library/SWRevealViewController.h; sourceTree = "<group>"; };
 		73DAD798190C3B7600027244 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = Plum/Library/SWRevealViewController.m; sourceTree = "<group>"; };
@@ -99,8 +119,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73455182190DC77200F55D98 /* SystemConfiguration.framework in Frameworks */,
+				73455180190DC76C00F55D98 /* StoreKit.framework in Frameworks */,
+				7345517E190DC76300F55D98 /* Security.framework in Frameworks */,
+				7345517C190DC75E00F55D98 /* QuartzCore.framework in Frameworks */,
+				7345517A190DC75900F55D98 /* MobileCoreServices.framework in Frameworks */,
+				73455178190DC75400F55D98 /* libz.dylib in Frameworks */,
+				73455176190DC74F00F55D98 /* CoreLocation.framework in Frameworks */,
 				7309B01D1909D0C800ACCD5E /* CoreGraphics.framework in Frameworks */,
+				73455174190DC74500F55D98 /* CFNetwork.framework in Frameworks */,
+				73455172190DC74000F55D98 /* AudioToolbox.framework in Frameworks */,
 				7309B01F1909D0C800ACCD5E /* UIKit.framework in Frameworks */,
+				73455170190DC71500F55D98 /* Parse.framework in Frameworks */,
 				7309B01B1909D0C800ACCD5E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +170,16 @@
 		7309B0191909D0C800ACCD5E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				73455181190DC77200F55D98 /* SystemConfiguration.framework */,
+				7345517F190DC76C00F55D98 /* StoreKit.framework */,
+				7345517D190DC76300F55D98 /* Security.framework */,
+				7345517B190DC75E00F55D98 /* QuartzCore.framework */,
+				73455179190DC75900F55D98 /* MobileCoreServices.framework */,
+				73455177190DC75400F55D98 /* libz.dylib */,
+				73455175190DC74F00F55D98 /* CoreLocation.framework */,
+				73455173190DC74500F55D98 /* CFNetwork.framework */,
+				73455171190DC74000F55D98 /* AudioToolbox.framework */,
+				7345516F190DC71500F55D98 /* Parse.framework */,
 				7309B01A1909D0C800ACCD5E /* Foundation.framework */,
 				7309B01C1909D0C800ACCD5E /* CoreGraphics.framework */,
 				7309B01E1909D0C800ACCD5E /* UIKit.framework */,
@@ -154,8 +194,6 @@
 				7309B0291909D0C800ACCD5E /* PlumAppDelegate.h */,
 				7309B02A1909D0C800ACCD5E /* PlumAppDelegate.m */,
 				7309B02C1909D0C800ACCD5E /* Main.storyboard */,
-				731E212D190D74B900C02B6D /* CardFlipSegue.h */,
-				731E212E190D74B900C02B6D /* CardFlipSegue.m */,
 				73DAD79E190C3DBA00027244 /* SidebarViewController.h */,
 				73DAD79F190C3DBA00027244 /* SidebarViewController.m */,
 				73DAD7AE190C545800027244 /* Cards */,
@@ -218,6 +256,8 @@
 		73DAD796190C3B6500027244 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				731E212D190D74B900C02B6D /* CardFlipSegue.h */,
+				731E212E190D74B900C02B6D /* CardFlipSegue.m */,
 				73DAD797190C3B7600027244 /* SWRevealViewController.h */,
 				73DAD798190C3B7600027244 /* SWRevealViewController.m */,
 			);
@@ -489,6 +529,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Plum/Plum-Prefix.pch";
 				INFOPLIST_FILE = "Plum/Plum-Info.plist";
@@ -502,6 +546,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Plum/Plum-Prefix.pch";
 				INFOPLIST_FILE = "Plum/Plum-Info.plist";
