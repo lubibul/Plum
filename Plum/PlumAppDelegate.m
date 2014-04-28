@@ -25,6 +25,18 @@
     
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0x9074a0)];
+
+//    PFObject *newTradingCard = [PFObject objectWithClassName:@"TradingCard"];
+//    newTradingCard[@"name"] = @"Dolrea";
+//    newTradingCard[@"subtitle"] = @"Eye Type";
+//    newTradingCard[@"description1"] = @"The Dolrea is a land creature that enjoys hot days in the sun and cool baths in the evening.";
+//    UIImage *image;
+//    image = [UIImage imageNamed:@"dolrea.png"];
+//    NSData *imageData = UIImageJPEGRepresentation(image, 1.0f);
+//    PFFile *imageFile = [PFFile fileWithName:@"dolrea.png" data:imageData];
+//    newTradingCard[@"pictureFile"] = imageFile;
+//    
+//    [newTradingCard saveInBackground];
     
 //    PFObject *newChapter = [PFObject objectWithClassName:@"Chapter"];
 //    newChapter[@"title"] = @"Fishbones: Chapter 1";

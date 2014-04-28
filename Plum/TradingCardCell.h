@@ -14,7 +14,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *subtitleLabel;
 @property (strong, nonatomic) IBOutlet UILabel *descriptionLabel;
 
-- (void)setupTradingCardWithImage:(NSString *)image
+- (void)setupTradingCardWithImage:(UIImage *)image
                          withName:(NSString *)name
                      withSubtitle:(NSString *)subtitle
                   withDescription:(NSString *)description;

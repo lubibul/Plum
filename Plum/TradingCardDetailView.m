@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 Lulu Tang. All rights reserved.
 //
 
-#import "PlumDetailViewController.h"
+#import "TradingCardDetailView.h"
 
-@interface PlumDetailViewController ()
+@interface TradingCardDetailView ()
 - (void)configureView;
 @end
 
-@implementation PlumDetailViewController
+@implementation TradingCardDetailView
 
 #pragma mark - Managing the detail item
 
@@ -29,9 +29,9 @@
 - (void)configureView
 {
     // Update the user interface for the detail item.
-
+    
     if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
+        self.tradingContentLabel.text = [self.detailItem description];
     }
 }
 

@@ -15,7 +15,6 @@
 		7309B02B1909D0C800ACCD5E /* PlumAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7309B02A1909D0C800ACCD5E /* PlumAppDelegate.m */; };
 		7309B02E1909D0C800ACCD5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7309B02C1909D0C800ACCD5E /* Main.storyboard */; };
 		7309B0311909D0C800ACCD5E /* PlumMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7309B0301909D0C800ACCD5E /* PlumMasterViewController.m */; };
-		7309B0341909D0C800ACCD5E /* PlumDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7309B0331909D0C800ACCD5E /* PlumDetailViewController.m */; };
 		7309B0361909D0C800ACCD5E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7309B0351909D0C800ACCD5E /* Images.xcassets */; };
 		7309B03D1909D0C800ACCD5E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7309B03C1909D0C800ACCD5E /* XCTest.framework */; };
 		7309B03E1909D0C800ACCD5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7309B01A1909D0C800ACCD5E /* Foundation.framework */; };
@@ -39,6 +38,7 @@
 		73455180190DC76C00F55D98 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7345517F190DC76C00F55D98 /* StoreKit.framework */; };
 		73455182190DC77200F55D98 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73455181190DC77200F55D98 /* SystemConfiguration.framework */; };
 		73455185190DD12400F55D98 /* ChapterDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73455184190DD12400F55D98 /* ChapterDetailView.m */; };
+		73455188190DD5B600F55D98 /* TradingCardDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73455187190DD5B600F55D98 /* TradingCardDetailView.m */; };
 		73DAD792190C1C8400027244 /* TradingCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73DAD791190C1C8400027244 /* TradingCardCell.xib */; };
 		73DAD799190C3B7600027244 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DAD798190C3B7600027244 /* SWRevealViewController.m */; };
 		73DAD7A0190C3DBA00027244 /* SidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DAD79F190C3DBA00027244 /* SidebarViewController.m */; };
@@ -74,8 +74,6 @@
 		7309B02D1909D0C800ACCD5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7309B02F1909D0C800ACCD5E /* PlumMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlumMasterViewController.h; sourceTree = "<group>"; };
 		7309B0301909D0C800ACCD5E /* PlumMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlumMasterViewController.m; sourceTree = "<group>"; };
-		7309B0321909D0C800ACCD5E /* PlumDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlumDetailViewController.h; sourceTree = "<group>"; };
-		7309B0331909D0C800ACCD5E /* PlumDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlumDetailViewController.m; sourceTree = "<group>"; };
 		7309B0351909D0C800ACCD5E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7309B03B1909D0C800ACCD5E /* PlumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7309B03C1909D0C800ACCD5E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -104,6 +102,8 @@
 		73455181190DC77200F55D98 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		73455183190DD12400F55D98 /* ChapterDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChapterDetailView.h; sourceTree = "<group>"; };
 		73455184190DD12400F55D98 /* ChapterDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterDetailView.m; sourceTree = "<group>"; };
+		73455186190DD5B600F55D98 /* TradingCardDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradingCardDetailView.h; sourceTree = "<group>"; };
+		73455187190DD5B600F55D98 /* TradingCardDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradingCardDetailView.m; sourceTree = "<group>"; };
 		73DAD791190C1C8400027244 /* TradingCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TradingCardCell.xib; sourceTree = "<group>"; };
 		73DAD797190C3B7600027244 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = Plum/Library/SWRevealViewController.h; sourceTree = "<group>"; };
 		73DAD798190C3B7600027244 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = Plum/Library/SWRevealViewController.m; sourceTree = "<group>"; };
@@ -202,8 +202,6 @@
 				73DAD7AE190C545800027244 /* Cards */,
 				7309B02F1909D0C800ACCD5E /* PlumMasterViewController.h */,
 				7309B0301909D0C800ACCD5E /* PlumMasterViewController.m */,
-				7309B0321909D0C800ACCD5E /* PlumDetailViewController.h */,
-				7309B0331909D0C800ACCD5E /* PlumDetailViewController.m */,
 				7309B0351909D0C800ACCD5E /* Images.xcassets */,
 				7309B0211909D0C800ACCD5E /* Supporting Files */,
 			);
@@ -281,6 +279,8 @@
 			children = (
 				7309B0521909D9A900ACCD5E /* PlumCardCell.h */,
 				7309B0531909D9A900ACCD5E /* PlumCardCell.m */,
+				73455186190DD5B600F55D98 /* TradingCardDetailView.h */,
+				73455187190DD5B600F55D98 /* TradingCardDetailView.m */,
 				73DAD7AF190C5B3700027244 /* StoryCardCell.xib */,
 				73DAD791190C1C8400027244 /* TradingCardCell.xib */,
 				7309B05D190A240000ACCD5E /* StoryCardCell.h */,
@@ -403,7 +403,7 @@
 				73DAD7A0190C3DBA00027244 /* SidebarViewController.m in Sources */,
 				7309B02B1909D0C800ACCD5E /* PlumAppDelegate.m in Sources */,
 				7309B05F190A240000ACCD5E /* StoryCardCell.m in Sources */,
-				7309B0341909D0C800ACCD5E /* PlumDetailViewController.m in Sources */,
+				73455188190DD5B600F55D98 /* TradingCardDetailView.m in Sources */,
 				73455185190DD12400F55D98 /* ChapterDetailView.m in Sources */,
 				73DAD799190C3B7600027244 /* SWRevealViewController.m in Sources */,
 				7309B0541909D9A900ACCD5E /* PlumCardCell.m in Sources */,

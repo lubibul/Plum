@@ -11,7 +11,8 @@
 #import "PlumCardCell.h"
 #import "TradingCardCell.h"
 #import "StoryCardCell.h"
-#import "PlumDetailViewController.h"
+#import "ChapterDetailView.h"
+#import "TradingCardDetailView.h"
 
 #import <Parse/Parse.h>
 
@@ -59,7 +60,8 @@
     
     PFQuery *query;
     query = [PFQuery queryWithClassName:@"Card"];
-    [query includeKey:@"content"];
+    [query includeKey:@"tradingCardPointer"];
+    [query includeKey:@"chapterPointer"];
     [query findObjectsInBackgroundWithTarget:self selector:@selector(findCallback:error:)];
 }
 
@@ -116,10 +118,18 @@
             NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"TradingCardCell" owner:self options:nil];
             cell = [nib objectAtIndex:0];
         }
-        [cell setupTradingCardWithImage:@"dolrea.png"
-                               withName:@"Dolrea"
-                           withSubtitle:@"Eye Type"
-                        withDescription:@"The Dolrea is a land creature that enjoys hot days in the sun and cool baths in the evening."];
+        
+        PFObject *tradingCard = myCard[@"tradingCardPointer"];
+        PFFile *file = [tradingCard objectForKey:@"pictureFile"];
+        NSData *imageData = [file getData];
+        UIImage *image = [UIImage imageWithData:imageData];
+        NSLog(@"setting picture");
+        // load up the image and then show it asynchronously
+        [cell setupTradingCardWithImage:image
+                               withName:tradingCard[@"name"]
+                            withSubtitle:tradingCard[@"subtitle"]
+                        withDescription:tradingCard[@"description1"]];
+        
         return cell;
     } else if ([CellIdentifier isEqualToString:@"StoryCard"]) {
         StoryCardCell *cell = (StoryCardCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -128,7 +138,7 @@
             cell = [nib objectAtIndex:0];
         }
 
-        PFObject *chapter = myCard[@"content"];
+        PFObject *chapter = myCard[@"chapterPointer"];
         [cell setupStoryCardWithTitle:chapter[@"title"]
                            withAuthor:chapter[@"author"]
                           withPreview:chapter[@"preview"]];
@@ -161,12 +171,14 @@
 {
     if ([[segue identifier] isEqualToString:@"tradingDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSString *object = self.cards[indexPath.row];
-        [[segue destinationViewController] setDetailItem:object];
+        PFObject *card = self.cards[indexPath.row];
+        PFObject *tradingCard = card[@"tradingCardPointer"];
+        NSString *name = tradingCard[@"name"];
+        [[segue destinationViewController] setDetailItem:name];
     } else if ([[segue identifier] isEqualToString:@"storyDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         PFObject *card = self.cards[indexPath.row];
-        PFObject *chapter = card[@"content"];
+        PFObject *chapter = card[@"chapterPointer"];
         [[segue destinationViewController] setDetailItem:chapter[@"content"]];
     }
 }
