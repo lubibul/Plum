@@ -15,9 +15,10 @@
 
 #import <Parse/Parse.h>
 
-@interface PlumMasterViewController () {
-    NSMutableArray *cards;
-}
+@interface PlumMasterViewController ()
+
+@property (strong, nonatomic) NSMutableArray *cards;
+
 @end
 
 @implementation PlumMasterViewController
@@ -48,18 +49,33 @@
     
     // Set the gesture
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
-    
-    if (!cards) {
-        cards = [[NSMutableArray alloc] init];
-    }
-    
-    [cards addObject:@"Anna"];
-    [cards addObject:@"Bob"];
-    [cards addObject:@"Casey"];
-    NSLog(@"We have %d cards", cards.count);
 
     self.tableView.backgroundColor = UIColorFromRGB(0xdedede);
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"plum_logo.png"]];
+    
+    if (!self.cards) {
+        self.cards = [[NSMutableArray alloc] init];
+    }
+    
+    PFQuery *query;
+    query = [PFQuery queryWithClassName:@"Card"];
+    [query includeKey:@"content"];
+    [query findObjectsInBackgroundWithTarget:self selector:@selector(findCallback:error:)];
+}
+
+- (void)findCallback:(NSArray *)objects error:(NSError *)error {
+    if (!error) {
+        // The find succeeded.
+        NSLog(@"Successfully retrieved %d cards.", (int)objects.count);
+        [self.cards removeAllObjects];
+        for (PFObject *object in objects) {
+            [self.cards addObject:object];
+        }
+        [self.tableView reloadData];
+    } else {
+        // Log details of the failure
+        NSLog(@"Error: %@ %@", error, [error userInfo]);
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -77,17 +93,19 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return cards.count;
+    return [self.cards count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier;
     
-    if ([[cards objectAtIndex:indexPath.row] isEqualToString:@"Anna"]) {
-        CellIdentifier = @"TradingCard";
-    } else {
+    PFObject *myCard = [self.cards objectAtIndex:indexPath.row];
+    
+    if ([myCard[@"type"] isEqualToString:@"chapter"]) {
         CellIdentifier = @"StoryCard";
+    } else {
+        CellIdentifier = @"TradingCard";
     }
     
     NSLog(@"Setting up cell %d", indexPath.row);
@@ -103,18 +121,23 @@
                            withSubtitle:@"Eye Type"
                         withDescription:@"The Dolrea is a land creature that enjoys hot days in the sun and cool baths in the evening."];
         return cell;
-    } else {
+    } else if ([CellIdentifier isEqualToString:@"StoryCard"]) {
         StoryCardCell *cell = (StoryCardCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         if (cell == nil) {
             NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"StoryCardCell" owner:self options:nil];
             cell = [nib objectAtIndex:0];
         }
-        [cell setupStoryCardWithTitle:@"Fishbones: Chapter 1"
-                           withAuthor:@"Jisuk Cho"
-                          withPreview:@"Ferris was running.\nHe didn’t run very often and wasn’t what one would call ‘good at it.’ He had only been running for a few blocks and could already feel his legs protesting. Of course, he wasn’t dressed for the occasion, nor had he woken up with a fist in his palm and the firm intent to go for a few laps around his neighborhood. In fact, the only reason that his shoes were pounding so hard against the wet pavement, that his sweater was starting to make him sweat, and that his scarf had fluttered off into a gutter ten yards back, was that he was being chased."];
+
+        PFObject *chapter = myCard[@"content"];
+        [cell setupStoryCardWithTitle:chapter[@"title"]
+                           withAuthor:chapter[@"author"]
+                          withPreview:chapter[@"preview"]];
         
         return cell;
-    }    
+    }
+    
+    StoryCardCell *dummycell = (StoryCardCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    return dummycell;
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
@@ -125,10 +148,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if ([[cards objectAtIndex:indexPath.row] isEqualToString:@"Anna"]) {
-        [self  performSegueWithIdentifier:@"tradingDetail" sender:self];
-    } else {
+    PFObject *myCard = [self.cards objectAtIndex:indexPath.row];
+    
+    if ([myCard[@"type"] isEqualToString:@"chapter"]) {
         [self  performSegueWithIdentifier:@"storyDetail" sender:self];
+    } else {
+        [self  performSegueWithIdentifier:@"tradingDetail" sender:self];
     }
 }
 
@@ -136,12 +161,13 @@
 {
     if ([[segue identifier] isEqualToString:@"tradingDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSString *object = cards[indexPath.row];
+        NSString *object = self.cards[indexPath.row];
         [[segue destinationViewController] setDetailItem:object];
     } else if ([[segue identifier] isEqualToString:@"storyDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSString *object = cards[indexPath.row];
-        [[segue destinationViewController] setDetailItem:object];
+        PFObject *card = self.cards[indexPath.row];
+        PFObject *chapter = card[@"content"];
+        [[segue destinationViewController] setDetailItem:chapter[@"content"]];
     }
 }
 
