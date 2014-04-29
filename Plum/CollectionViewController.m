@@ -98,6 +98,14 @@
             [self.cards addObject:object];
         }
         [self.tableView reloadData];
+        
+        if ([self.cards count] == 0) {
+            UIAlertView *alert = [UIAlertView alloc];
+            alert.title = @"Ooh!";
+            alert.message = @"Looks like you haven't collected any cards yet! Click on the plus button on any card from today to add it to your collection.";
+            [alert addButtonWithTitle:@"Neat!"];
+            [alert show];
+        }
     } else {
         // Log details of the failure
         NSLog(@"Error: %@ %@", error, [error userInfo]);
