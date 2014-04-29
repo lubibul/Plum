@@ -17,7 +17,7 @@
                         <rect key="frame" x="17" y="14" width="287" height="411"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kbW-uW-8wE">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kbW-uW-8wE" customClass="PFImageView">
                                 <rect key="frame" x="20" y="20" width="247" height="247"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -51,7 +51,7 @@
                 <outlet property="mainView" destination="1gs-fF-hIb" id="nx1-xv-2Vq"/>
                 <outlet property="nameLabel" destination="R7p-1a-xtV" id="e2d-7N-HQb"/>
                 <outlet property="subtitleLabel" destination="KeI-Hf-D8I" id="9fU-KR-jhb"/>
-                <outlet property="tradingPicture" destination="kbW-uW-8wE" id="NVQ-ZQ-SdG"/>
+                <outlet property="tradingPicture" destination="kbW-uW-8wE" id="s66-Ov-4ag"/>
             </connections>
         </tableViewCell>
     </objects>

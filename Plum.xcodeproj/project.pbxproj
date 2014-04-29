@@ -27,6 +27,7 @@
 		7309B05C190A184500ACCD5E /* TradingCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7309B05B190A184500ACCD5E /* TradingCardCell.m */; };
 		7309B05F190A240000ACCD5E /* StoryCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7309B05E190A240000ACCD5E /* StoryCardCell.m */; };
 		731E212F190D74B900C02B6D /* CardFlipSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 731E212E190D74B900C02B6D /* CardFlipSegue.m */; };
+		7336530E190F5A5700538335 /* trading_card_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 7336530D190F5A5700538335 /* trading_card_placeholder.png */; };
 		73455170190DC71500F55D98 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7345516F190DC71500F55D98 /* Parse.framework */; };
 		73455172190DC74000F55D98 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73455171190DC74000F55D98 /* AudioToolbox.framework */; };
 		73455174190DC74500F55D98 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73455173190DC74500F55D98 /* CFNetwork.framework */; };
@@ -90,6 +91,7 @@
 		7309B05E190A240000ACCD5E /* StoryCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryCardCell.m; sourceTree = "<group>"; };
 		731E212D190D74B900C02B6D /* CardFlipSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardFlipSegue.h; path = Plum/CardFlipSegue.h; sourceTree = "<group>"; };
 		731E212E190D74B900C02B6D /* CardFlipSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardFlipSegue.m; path = Plum/CardFlipSegue.m; sourceTree = "<group>"; };
+		7336530D190F5A5700538335 /* trading_card_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = trading_card_placeholder.png; path = Plum/img/trading_card_placeholder.png; sourceTree = "<group>"; };
 		7345516F190DC71500F55D98 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		73455171190DC74000F55D98 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		73455173190DC74500F55D98 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -245,6 +247,7 @@
 			children = (
 				73DAD7A7190C4D1A00027244 /* plum_logo.png */,
 				73DAD7A8190C4D1A00027244 /* plum_logo@2x.png */,
+				7336530D190F5A5700538335 /* trading_card_placeholder.png */,
 				73DAD7A3190C4AB500027244 /* menu.png */,
 				73DAD7A4190C4AB500027244 /* menu@2x.png */,
 				7309B058190A07A500ACCD5E /* background.png */,
@@ -372,6 +375,7 @@
 			files = (
 				73DAD7A6190C4AB500027244 /* menu@2x.png in Resources */,
 				73DAD7B0190C5B3700027244 /* StoryCardCell.xib in Resources */,
+				7336530E190F5A5700538335 /* trading_card_placeholder.png in Resources */,
 				7309B0361909D0C800ACCD5E /* Images.xcassets in Resources */,
 				73DAD7A9190C4D1A00027244 /* plum_logo.png in Resources */,
 				7309B059190A07A500ACCD5E /* background.png in Resources */,

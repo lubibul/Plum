@@ -21,15 +21,20 @@
     return self;
 }
 
-- (void)setupTradingCardWithImage:(UIImage *)image
+- (void)setupTradingCardWithFile:(PFFile *)file
                          withName:(NSString *)name
                      withSubtitle:(NSString *)subtitle
                   withDescription:(NSString *)description
 {
     [self setupCard];
     
+    if (!self.tradingPicture) self.tradingPicture = [[PFImageView alloc] init];
+    self.tradingPicture.image = [UIImage imageNamed:@"trading_card_placeholder.png"]; // placeholder image
+    self.tradingPicture.file = file;
+    [self.tradingPicture loadInBackground];
     self.tradingPicture.backgroundColor = (UIColorFromRGB(0xf1f1f1));
-//    self.tradingPicture.image = image;
+    
+//    self.tradingPicture = creature;
     
     self.nameLabel.text = name;
     self.subtitleLabel.text = subtitle;

@@ -120,12 +120,8 @@
         }
         
         PFObject *tradingCard = myCard[@"tradingCardPointer"];
-        PFFile *file = [tradingCard objectForKey:@"pictureFile"];
-        NSData *imageData = [file getData];
-        UIImage *image = [UIImage imageWithData:imageData];
-        NSLog(@"setting picture");
-        // load up the image and then show it asynchronously
-        [cell setupTradingCardWithImage:image
+
+        [cell setupTradingCardWithFile:tradingCard[@"pictureFile"]
                                withName:tradingCard[@"name"]
                             withSubtitle:tradingCard[@"subtitle"]
                         withDescription:tradingCard[@"description1"]];
