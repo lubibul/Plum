@@ -70,6 +70,7 @@
 		73E61C82190FF74300991983 /* collection.png in Resources */ = {isa = PBXBuildFile; fileRef = 73E61C81190FF74300991983 /* collection.png */; };
 		73E61C84190FF7B800991983 /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = 73E61C83190FF7B800991983 /* logout.png */; };
 		73E61C86190FF8BD00991983 /* collectiontitle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73E61C85190FF8BD00991983 /* collectiontitle@2x.png */; };
+		73EAD1CC19100B1E003FBE9D /* delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73EAD1CB19100B1E003FBE9D /* delete@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +164,7 @@
 		73E61C81190FF74300991983 /* collection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = collection.png; path = Plum/img/collection.png; sourceTree = "<group>"; };
 		73E61C83190FF7B800991983 /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logout.png; path = Plum/img/logout.png; sourceTree = "<group>"; };
 		73E61C85190FF8BD00991983 /* collectiontitle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "collectiontitle@2x.png"; path = "Plum/img/collectiontitle@2x.png"; sourceTree = "<group>"; };
+		73EAD1CB19100B1E003FBE9D /* delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "delete@2x.png"; path = "Plum/img/delete@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,12 +257,12 @@
 				7309B02C1909D0C800ACCD5E /* Main.storyboard */,
 				73E61C63190F7F1C00991983 /* CollectionViewController.h */,
 				73E61C64190F7F1C00991983 /* CollectionViewController.m */,
-				73E61C70190FEBCD00991983 /* Login and SignUp */,
 				73DAD79E190C3DBA00027244 /* SidebarViewController.h */,
 				73DAD79F190C3DBA00027244 /* SidebarViewController.m */,
 				7309B02F1909D0C800ACCD5E /* PlumMasterViewController.h */,
 				7309B0301909D0C800ACCD5E /* PlumMasterViewController.m */,
 				73DAD7AE190C545800027244 /* Cards */,
+				73E61C70190FEBCD00991983 /* Login and SignUp */,
 				7309B0351909D0C800ACCD5E /* Images.xcassets */,
 				7309B0211909D0C800ACCD5E /* Supporting Files */,
 			);
@@ -309,6 +311,7 @@
 				73E61C77190FF06D00991983 /* LogIn.png */,
 				73E61C7B190FF1EE00991983 /* loginlogo@2x.png */,
 				73E61C7D190FF3C000991983 /* SignUpFieldBG.png */,
+				73EAD1CB19100B1E003FBE9D /* delete@2x.png */,
 				73E61C78190FF06D00991983 /* LogInDown.png */,
 				73E61C85190FF8BD00991983 /* collectiontitle@2x.png */,
 				73E61C83190FF7B800991983 /* logout.png */,
@@ -466,6 +469,7 @@
 				73E61C68190FDF2100991983 /* plus.png in Resources */,
 				73E61C84190FF7B800991983 /* logout.png in Resources */,
 				73DAD7A9190C4D1A00027244 /* plum_logo.png in Resources */,
+				73EAD1CC19100B1E003FBE9D /* delete@2x.png in Resources */,
 				73DAD792190C1C8400027244 /* TradingCardCell.xib in Resources */,
 				73E61C7E190FF3C000991983 /* SignUpFieldBG.png in Resources */,
 				73DAD7AA190C4D1A00027244 /* plum_logo@2x.png in Resources */,

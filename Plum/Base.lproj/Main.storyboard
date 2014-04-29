@@ -207,6 +207,7 @@
                             <outlet property="delegate" destination="hfH-2U-avi" id="oPp-v2-ezZ"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="gLV-uf-V2Q"/>
                     <connections>
                         <segue destination="1MM-dy-rOB" kind="custom" identifier="storyDetail" customClass="CardFlipSegue" id="wk7-X7-nCx"/>
                         <segue destination="Ah7-4n-0Wa" kind="custom" identifier="tradingDetail" customClass="CardFlipSegue" id="baU-mn-fdi"/>
@@ -258,6 +259,7 @@
                         <outlet property="authorLabel" destination="R9S-jg-TaK" id="fgq-Y5-sZ5"/>
                         <outlet property="chapterContent" destination="XDJ-EM-TBe" id="zmI-Y3-SU1"/>
                         <outlet property="titleLabel" destination="Eq1-LJ-VG6" id="5mz-ek-H7F"/>
+                        <segue destination="hfH-2U-avi" kind="push" identifier="backToCollection" id="fhG-BH-5I9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5DV-oC-KUN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -315,6 +317,7 @@
                         <outlet property="nameLabel" destination="bH7-Ao-yhG" id="dSu-V8-f0r"/>
                         <outlet property="subtitleLabel" destination="2Dl-dp-EkJ" id="CfM-m9-o1q"/>
                         <outlet property="tradingPicture" destination="AlN-N3-iiR" id="Af6-Eo-0qX"/>
+                        <segue destination="hfH-2U-avi" kind="push" identifier="backToCollection" id="igb-v5-Lmm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lrm-kH-fPn" sceneMemberID="firstResponder"/>
@@ -335,9 +338,10 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Mc9-yh-Jvj"/>
+        <segue reference="igb-v5-Lmm"/>
         <segue reference="baU-mn-fdi"/>
         <segue reference="wk7-X7-nCx"/>
         <segue reference="LFF-ES-eRA"/>
+        <segue reference="Mc9-yh-Jvj"/>
     </inferredMetricsTieBreakers>
 </document>

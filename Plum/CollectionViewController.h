@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 
-@interface CollectionViewController : UITableViewController
+@interface CollectionViewController : UITableViewController <UIAlertViewDelegate>
 @property (strong, nonatomic) UIBarButtonItem *sidebarButton;
 @end

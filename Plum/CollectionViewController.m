@@ -60,6 +60,13 @@
     if (!self.cards) {
         self.cards = [[NSMutableArray alloc] init];
     }
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    // set navigation bar's tint color when being shown
+    self.navigationController.navigationBar.barTintColor = UIColorFromRGB(0x75b4ce);
     
     PFUser *currentUser = [PFUser currentUser];
     PFRelation *relation;
@@ -69,13 +76,6 @@
     [query includeKey:@"tradingCardPointer"];
     [query includeKey:@"chapterPointer"];
     [query findObjectsInBackgroundWithTarget:self selector:@selector(findCollectedCards:error:)];
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    // set navigation bar's tint color when being shown
-    self.navigationController.navigationBar.barTintColor = UIColorFromRGB(0x75b4ce);
 }
 - (void)findCollectedCards:(NSArray *)objects error:(NSError *)error {
     if (!error) {
@@ -185,6 +185,15 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    // Set the add bar button action.
+    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"delete.png"]
+                                                                  style:UIBarButtonItemStylePlain
+                                                                 target:self
+                                                                 action:@selector(removeCard:)];
+    
+    UINavigationController *destViewController = (UINavigationController*)segue.destinationViewController;
+    destViewController.navigationItem.rightBarButtonItem = addButton;
+    
     if ([[segue identifier] isEqualToString:@"storyDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         PFObject *card = self.cards[indexPath.row];
@@ -198,4 +207,32 @@
     }
 }
 
+- (IBAction)removeCard:(id)sender
+{
+    UIAlertView *alert = [UIAlertView alloc];
+    alert.title = @"Whoa!";
+    alert.message = @"Are you sure you want to remove this card from your collection? You can't collect cards from the past once they're gone.";
+    alert.delegate = self;
+    [alert addButtonWithTitle:@"Remove"];
+    [alert addButtonWithTitle:@"Cancel"];
+    [alert show];
+}
+
+- (void)alertView:(UIAlertView *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+    // the user clicked one of the OK/Cancel buttons
+    if (buttonIndex == 0)
+    {
+        NSLog(@"remove");
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        PFObject *myCard = [self.cards objectAtIndex:indexPath.row];
+        PFUser *user = [PFUser currentUser];
+        PFRelation *relation = [user relationforKey:@"collected"];
+        [relation removeObject:myCard];
+        [user saveInBackground];
+    }
+    else
+    {
+        NSLog(@"cancel");
+    }
+}
 @end
