@@ -68,7 +68,10 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="pGg-6v-bdr" kind="custom" identifier="showMainView" customClass="SWRevealViewControllerSegue" id="Mc9-yh-Jvj"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="logout" id="ObF-PP-cD5">
                                 <rect key="frame" x="0.0" y="66" width="320" height="44"/>
@@ -86,9 +89,30 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <segue destination="PLb-0t-KSy" kind="custom" identifier="logOut" customClass="SWRevealViewControllerSegue" id="Sgd-7j-8FL"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="collection" id="vAk-WO-hn9">
+                                <rect key="frame" x="0.0" y="110" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vAk-WO-hn9" id="XLy-dA-dfd">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Collection" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yqK-av-K2a">
+                                            <rect key="frame" x="20" y="10" width="280" height="23"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="hfH-2U-avi" kind="custom" identifier="showCollection" customClass="SWRevealViewControllerSegue" id="a5G-uh-R5y"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -128,7 +152,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cmA-Oo-6zA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="459" y="-618"/>
+            <point key="canvasLocation" x="459" y="814"/>
         </scene>
         <!--Plum Master View Controller - Master-->
         <scene sceneID="VgW-fR-Quf">
@@ -155,7 +179,28 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Cn-md-YlS" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="459" y="64"/>
+            <point key="canvasLocation" x="559" y="64"/>
+        </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="sap-Kx-Fbs">
+            <objects>
+                <tableViewController id="hfH-2U-avi" customClass="CollectionViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="440" sectionHeaderHeight="22" sectionFooterHeight="22" id="Fe9-C2-2vN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="hfH-2U-avi" id="aOM-KU-D9D"/>
+                            <outlet property="delegate" destination="hfH-2U-avi" id="oPp-v2-ezZ"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="1MM-dy-rOB" kind="custom" identifier="storyDetail" customClass="CardFlipSegue" id="wk7-X7-nCx"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j05-BV-bo7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="559" y="-618"/>
         </scene>
         <!--Chapter Detail View-->
         <scene sceneID="gqw-A1-JwC">
@@ -203,7 +248,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5DV-oC-KUN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="902" y="-618"/>
+            <point key="canvasLocation" x="1066" y="-618"/>
         </scene>
         <!--Trading Card Detail View-->
         <scene sceneID="Cn3-H9-jdl">
@@ -234,7 +279,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lrm-kH-fPn" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="902" y="64"/>
+            <point key="canvasLocation" x="1066" y="64"/>
         </scene>
     </scenes>
     <resources>
@@ -248,5 +293,7 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="Sgd-7j-8FL"/>
+        <segue reference="wk7-X7-nCx"/>
+        <segue reference="tRM-nn-n7M"/>
     </inferredMetricsTieBreakers>
 </document>

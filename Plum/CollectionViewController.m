@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Lulu Tang. All rights reserved.
 //
 
-#import "PlumMasterViewController.h"
+#import "CollectionViewController.h"
 #import "SWRevealViewController.h"
 #import "PlumCardCell.h"
 #import "TradingCardCell.h"
@@ -16,13 +16,13 @@
 
 #import <Parse/Parse.h>
 
-@interface PlumMasterViewController ()
+@interface CollectionViewController ()
 
 @property (strong, nonatomic) NSMutableArray *cards;
 
 @end
 
-@implementation PlumMasterViewController
+@implementation CollectionViewController
 
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
@@ -45,14 +45,17 @@
     [super viewDidLoad];
     
     // Set the side bar button action. When it's tapped, it'll show up the sidebar.
-    _sidebarButton.target = self.revealViewController;
-    _sidebarButton.action = @selector(revealToggle:);
+    _sidebarButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu.png"]
+                                                      style:UIBarButtonItemStylePlain
+                                                     target:self.revealViewController
+                                                     action:@selector(revealToggle:)];
+    self.navigationItem.leftBarButtonItem = _sidebarButton;
     
     // Set the gesture
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
-
+    
     self.tableView.backgroundColor = UIColorFromRGB(0xdedede);
-    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"plum_logo.png"]];
+    self.navigationItem.title = @"My Collection";
     
     if (!self.cards) {
         self.cards = [[NSMutableArray alloc] init];
@@ -69,7 +72,19 @@
 {
     [super viewWillAppear:animated];
     // set navigation bar's tint color when being shown
-    self.navigationController.navigationBar.barTintColor = UIColorFromRGB(0x9074a0);
+    self.navigationController.navigationBar.barTintColor = UIColorFromRGB(0x75b4ce);
+//    UILabel *titleView = (UILabel *)self.navigationItem.titleView;
+//    if (!titleView) {
+//        titleView = [[UILabel alloc] initWithFrame:CGRectZero];
+//        titleView.backgroundColor = [UIColor clearColor];
+//        titleView.font = [UIFont boldSystemFontOfSize:20.0];
+//        titleView.shadowColor = [UIColor colorWithWhite:0.0 alpha:0.5];
+//        
+//        titleView.textColor = [UIColor yellowColor]; // Change to desired color
+//        
+//        self.navigationItem.titleView = titleView;
+//    }
+//    self.navigationItem.titleView.tintColor = [UIColor whiteColor];
 }
 
 - (void)findCallback:(NSArray *)objects error:(NSError *)error {
@@ -127,11 +142,11 @@
         }
         
         PFObject *tradingCard = myCard[@"tradingCardPointer"];
-
+        
         [cell setupTradingCardWithFile:tradingCard[@"pictureFile"]
-                               withName:tradingCard[@"name"]
-                            withSubtitle:tradingCard[@"subtitle"]
-                        withDescription:tradingCard[@"description1"]];
+                              withName:tradingCard[@"name"]
+                          withSubtitle:tradingCard[@"subtitle"]
+                       withDescription:tradingCard[@"description1"]];
         
         return cell;
     } else if ([CellIdentifier isEqualToString:@"StoryCard"]) {
@@ -140,7 +155,7 @@
             NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"StoryCardCell" owner:self options:nil];
             cell = [nib objectAtIndex:0];
         }
-
+        
         PFObject *chapter = myCard[@"chapterPointer"];
         [cell setupStoryCardWithTitle:chapter[@"title"]
                            withAuthor:chapter[@"author"]

@@ -35,7 +35,7 @@
     self.tableView.backgroundColor = UIColorFromRGB(0x9074a0);
     self.tableView.separatorColor = [UIColor clearColor];
     
-    _menuItems = @[@"title", @"logout"];
+    _menuItems = @[@"title", @"logout", @"collection"];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -77,6 +77,11 @@
     if ([segue.identifier isEqualToString:@"logOut"]) {
         [PFUser logOut];
         NSLog(@"logged out");
+    } else if ([segue.identifier isEqualToString:@"showCollection"]) {
+        // Set the title of the navigation bar by using the menu items
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        UINavigationController *destViewController = (UINavigationController*)segue.destinationViewController;
+        destViewController.title = [[_menuItems objectAtIndex:indexPath.row] capitalizedString];
     }
     
     if ( [segue isKindOfClass: [SWRevealViewControllerSegue class]] ) {

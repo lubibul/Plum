@@ -54,6 +54,7 @@
 		73E61C5E190F6BBA00991983 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E61C5D190F6BBA00991983 /* Social.framework */; };
 		73E61C60190F6BCF00991983 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E61C5F190F6BCF00991983 /* libsqlite3.dylib */; };
 		73E61C62190F738800991983 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73E61C61190F738800991983 /* background.jpg */; };
+		73E61C65190F7F1C00991983 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E61C64190F7F1C00991983 /* CollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +129,8 @@
 		73E61C5D190F6BBA00991983 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		73E61C5F190F6BCF00991983 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		73E61C61190F738800991983 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = Plum/img/background.jpg; sourceTree = "<group>"; };
+		73E61C63190F7F1C00991983 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		73E61C64190F7F1C00991983 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,13 +221,15 @@
 				7309B0291909D0C800ACCD5E /* PlumAppDelegate.h */,
 				7309B02A1909D0C800ACCD5E /* PlumAppDelegate.m */,
 				7309B02C1909D0C800ACCD5E /* Main.storyboard */,
+				73E61C63190F7F1C00991983 /* CollectionViewController.h */,
+				73E61C64190F7F1C00991983 /* CollectionViewController.m */,
 				73E61C56190F689800991983 /* LoginViewController.h */,
 				73E61C57190F689800991983 /* LoginViewController.m */,
 				73DAD79E190C3DBA00027244 /* SidebarViewController.h */,
 				73DAD79F190C3DBA00027244 /* SidebarViewController.m */,
-				73DAD7AE190C545800027244 /* Cards */,
 				7309B02F1909D0C800ACCD5E /* PlumMasterViewController.h */,
 				7309B0301909D0C800ACCD5E /* PlumMasterViewController.m */,
+				73DAD7AE190C545800027244 /* Cards */,
 				7309B0351909D0C800ACCD5E /* Images.xcassets */,
 				7309B0211909D0C800ACCD5E /* Supporting Files */,
 			);
@@ -435,6 +440,7 @@
 				731E212F190D74B900C02B6D /* CardFlipSegue.m in Sources */,
 				73E61C58190F689800991983 /* LoginViewController.m in Sources */,
 				7309B0311909D0C800ACCD5E /* PlumMasterViewController.m in Sources */,
+				73E61C65190F7F1C00991983 /* CollectionViewController.m in Sources */,
 				7309B0271909D0C800ACCD5E /* main.m in Sources */,
 				7309B05C190A184500ACCD5E /* TradingCardCell.m in Sources */,
 			);
