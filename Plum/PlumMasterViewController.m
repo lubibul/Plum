@@ -194,6 +194,8 @@
 
 - (IBAction)addCard:(id)sender
 {
+    UIAlertView *alert = [UIAlertView alloc];
+
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
     PFObject *myCard = [self.cards objectAtIndex:indexPath.row];
     PFUser *user = [PFUser currentUser];
@@ -204,10 +206,17 @@
     [query countObjectsInBackgroundWithBlock:^(int count, NSError *error) {
         if (count == 0) {
             NSLog(@"added this card");
+            alert.message = @"Added to your collection!";
+            [alert addButtonWithTitle:@"Plum!"];
+            [alert show];
             [relation addObject:myCard];
             [user saveInBackground];
         } else {
             NSLog(@"duplicate card. didn't add");
+            alert.message = @"Already in your collection!";
+            [alert addButtonWithTitle:@"Plum!"];
+            [alert show];
+
         }
     }];
 }
