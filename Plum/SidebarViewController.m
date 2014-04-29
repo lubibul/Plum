@@ -7,6 +7,8 @@
 //
 
 #import "SidebarViewController.h"
+#import <Parse/Parse.h>
+#import "SWRevealViewController.h"
 
 @interface SidebarViewController ()
 @property (nonatomic, strong) NSArray *menuItems;
@@ -33,7 +35,7 @@
     self.tableView.backgroundColor = UIColorFromRGB(0x9074a0);
     self.tableView.separatorColor = [UIColor clearColor];
     
-    _menuItems = @[@"title"];
+    _menuItems = @[@"title", @"logout"];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -67,58 +69,28 @@
     NSString *CellIdentifier = [self.menuItems objectAtIndex:indexPath.row];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    cell.textLabel.textColor = [UIColor greenColor];
-    
     return cell;
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+    if ([segue.identifier isEqualToString:@"logOut"]) {
+        [PFUser logOut];
+        NSLog(@"logged out");
+    }
+    
+    if ( [segue isKindOfClass: [SWRevealViewControllerSegue class]] ) {
+        SWRevealViewControllerSegue *swSegue = (SWRevealViewControllerSegue*) segue;
+        
+        swSegue.performBlock = ^(SWRevealViewControllerSegue* rvc_segue, UIViewController* svc, UIViewController* dvc) {
+            
+            UINavigationController* navController = (UINavigationController*)self.revealViewController.frontViewController;
+            [navController setViewControllers: @[dvc] animated: NO ];
+            [self.revealViewController setFrontViewPosition: FrontViewPositionLeft animated: YES];
+        };
+        
+    }
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
