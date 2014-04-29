@@ -57,6 +57,15 @@
 		73E61C65190F7F1C00991983 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E61C64190F7F1C00991983 /* CollectionViewController.m */; };
 		73E61C68190FDF2100991983 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 73E61C66190FDF2100991983 /* plus.png */; };
 		73E61C69190FDF2100991983 /* plus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73E61C67190FDF2100991983 /* plus@2x.png */; };
+		73E61C6C190FE9F900991983 /* PlumSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E61C6B190FE9F900991983 /* PlumSignUpViewController.m */; };
+		73E61C6F190FEA3F00991983 /* PlumLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E61C6E190FEA3F00991983 /* PlumLogInViewController.m */; };
+		73E61C72190FED4500991983 /* LoginFieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 73E61C71190FED4500991983 /* LoginFieldBG.png */; };
+		73E61C75190FEE7000991983 /* SignUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 73E61C73190FEE7000991983 /* SignUp.png */; };
+		73E61C76190FEE7000991983 /* SignUpDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 73E61C74190FEE7000991983 /* SignUpDown.png */; };
+		73E61C79190FF06D00991983 /* LogIn.png in Resources */ = {isa = PBXBuildFile; fileRef = 73E61C77190FF06D00991983 /* LogIn.png */; };
+		73E61C7A190FF06D00991983 /* LogInDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 73E61C78190FF06D00991983 /* LogInDown.png */; };
+		73E61C7C190FF1EE00991983 /* loginlogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73E61C7B190FF1EE00991983 /* loginlogo@2x.png */; };
+		73E61C7E190FF3C000991983 /* SignUpFieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 73E61C7D190FF3C000991983 /* SignUpFieldBG.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +144,17 @@
 		73E61C64190F7F1C00991983 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		73E61C66190FDF2100991983 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plus.png; path = Plum/img/plus.png; sourceTree = "<group>"; };
 		73E61C67190FDF2100991983 /* plus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "plus@2x.png"; path = "Plum/img/plus@2x.png"; sourceTree = "<group>"; };
+		73E61C6A190FE9F900991983 /* PlumSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlumSignUpViewController.h; sourceTree = "<group>"; };
+		73E61C6B190FE9F900991983 /* PlumSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlumSignUpViewController.m; sourceTree = "<group>"; };
+		73E61C6D190FEA3F00991983 /* PlumLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlumLogInViewController.h; sourceTree = "<group>"; };
+		73E61C6E190FEA3F00991983 /* PlumLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlumLogInViewController.m; sourceTree = "<group>"; };
+		73E61C71190FED4500991983 /* LoginFieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LoginFieldBG.png; path = Plum/img/LoginFieldBG.png; sourceTree = "<group>"; };
+		73E61C73190FEE7000991983 /* SignUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SignUp.png; path = Plum/img/SignUp.png; sourceTree = "<group>"; };
+		73E61C74190FEE7000991983 /* SignUpDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SignUpDown.png; path = Plum/img/SignUpDown.png; sourceTree = "<group>"; };
+		73E61C77190FF06D00991983 /* LogIn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LogIn.png; path = Plum/img/LogIn.png; sourceTree = "<group>"; };
+		73E61C78190FF06D00991983 /* LogInDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LogInDown.png; path = Plum/img/LogInDown.png; sourceTree = "<group>"; };
+		73E61C7B190FF1EE00991983 /* loginlogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "loginlogo@2x.png"; path = "Plum/img/loginlogo@2x.png"; sourceTree = "<group>"; };
+		73E61C7D190FF3C000991983 /* SignUpFieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SignUpFieldBG.png; path = Plum/img/SignUpFieldBG.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,8 +247,7 @@
 				7309B02C1909D0C800ACCD5E /* Main.storyboard */,
 				73E61C63190F7F1C00991983 /* CollectionViewController.h */,
 				73E61C64190F7F1C00991983 /* CollectionViewController.m */,
-				73E61C56190F689800991983 /* LoginViewController.h */,
-				73E61C57190F689800991983 /* LoginViewController.m */,
+				73E61C70190FEBCD00991983 /* Login and SignUp */,
 				73DAD79E190C3DBA00027244 /* SidebarViewController.h */,
 				73DAD79F190C3DBA00027244 /* SidebarViewController.m */,
 				7309B02F1909D0C800ACCD5E /* PlumMasterViewController.h */,
@@ -277,7 +296,14 @@
 			children = (
 				73E61C66190FDF2100991983 /* plus.png */,
 				73E61C67190FDF2100991983 /* plus@2x.png */,
+				73E61C71190FED4500991983 /* LoginFieldBG.png */,
+				73E61C77190FF06D00991983 /* LogIn.png */,
+				73E61C7B190FF1EE00991983 /* loginlogo@2x.png */,
+				73E61C7D190FF3C000991983 /* SignUpFieldBG.png */,
+				73E61C78190FF06D00991983 /* LogInDown.png */,
 				73DAD7A7190C4D1A00027244 /* plum_logo.png */,
+				73E61C73190FEE7000991983 /* SignUp.png */,
+				73E61C74190FEE7000991983 /* SignUpDown.png */,
 				73DAD7A8190C4D1A00027244 /* plum_logo@2x.png */,
 				7336530D190F5A5700538335 /* trading_card_placeholder.png */,
 				73E61C61190F738800991983 /* background.jpg */,
@@ -326,6 +352,19 @@
 				73455184190DD12400F55D98 /* ChapterDetailView.m */,
 			);
 			name = Cards;
+			sourceTree = "<group>";
+		};
+		73E61C70190FEBCD00991983 /* Login and SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				73E61C6A190FE9F900991983 /* PlumSignUpViewController.h */,
+				73E61C6B190FE9F900991983 /* PlumSignUpViewController.m */,
+				73E61C6D190FEA3F00991983 /* PlumLogInViewController.h */,
+				73E61C6E190FEA3F00991983 /* PlumLogInViewController.m */,
+				73E61C56190F689800991983 /* LoginViewController.h */,
+				73E61C57190F689800991983 /* LoginViewController.m */,
+			);
+			name = "Login and SignUp";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,6 +445,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73DAD7A6190C4AB500027244 /* menu@2x.png in Resources */,
+				73E61C7C190FF1EE00991983 /* loginlogo@2x.png in Resources */,
 				73E61C62190F738800991983 /* background.jpg in Resources */,
 				73DAD7B0190C5B3700027244 /* StoryCardCell.xib in Resources */,
 				7336530E190F5A5700538335 /* trading_card_placeholder.png in Resources */,
@@ -413,13 +453,19 @@
 				73E61C68190FDF2100991983 /* plus.png in Resources */,
 				73DAD7A9190C4D1A00027244 /* plum_logo.png in Resources */,
 				73DAD792190C1C8400027244 /* TradingCardCell.xib in Resources */,
+				73E61C7E190FF3C000991983 /* SignUpFieldBG.png in Resources */,
 				73DAD7AA190C4D1A00027244 /* plum_logo@2x.png in Resources */,
+				73E61C72190FED4500991983 /* LoginFieldBG.png in Resources */,
 				73DAD7A5190C4AB500027244 /* menu.png in Resources */,
 				73DAD7AD190C540D00027244 /* dolrea.png in Resources */,
 				73E61C69190FDF2100991983 /* plus@2x.png in Resources */,
+				73E61C7A190FF06D00991983 /* LogInDown.png in Resources */,
 				7309B0571909E1DF00ACCD5E /* anna.jpg in Resources */,
+				73E61C79190FF06D00991983 /* LogIn.png in Resources */,
+				73E61C75190FEE7000991983 /* SignUp.png in Resources */,
 				7309B0251909D0C800ACCD5E /* InfoPlist.strings in Resources */,
 				7309B02E1909D0C800ACCD5E /* Main.storyboard in Resources */,
+				73E61C76190FEE7000991983 /* SignUpDown.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,7 +494,9 @@
 				731E212F190D74B900C02B6D /* CardFlipSegue.m in Sources */,
 				73E61C58190F689800991983 /* LoginViewController.m in Sources */,
 				7309B0311909D0C800ACCD5E /* PlumMasterViewController.m in Sources */,
+				73E61C6C190FE9F900991983 /* PlumSignUpViewController.m in Sources */,
 				73E61C65190F7F1C00991983 /* CollectionViewController.m in Sources */,
+				73E61C6F190FEA3F00991983 /* PlumLogInViewController.m in Sources */,
 				7309B0271909D0C800ACCD5E /* main.m in Sources */,
 				7309B05C190A184500ACCD5E /* TradingCardCell.m in Sources */,
 			);
