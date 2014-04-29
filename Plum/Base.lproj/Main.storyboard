@@ -209,6 +209,7 @@
                     </tableView>
                     <connections>
                         <segue destination="1MM-dy-rOB" kind="custom" identifier="storyDetail" customClass="CardFlipSegue" id="wk7-X7-nCx"/>
+                        <segue destination="Ah7-4n-0Wa" kind="custom" identifier="tradingDetail" customClass="CardFlipSegue" id="baU-mn-fdi"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j05-BV-bo7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -335,7 +336,8 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="Mc9-yh-Jvj"/>
-        <segue reference="f6S-dG-LBW"/>
+        <segue reference="baU-mn-fdi"/>
+        <segue reference="wk7-X7-nCx"/>
         <segue reference="LFF-ES-eRA"/>
     </inferredMetricsTieBreakers>
 </document>
