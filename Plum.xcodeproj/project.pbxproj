@@ -66,6 +66,9 @@
 		73E61C7A190FF06D00991983 /* LogInDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 73E61C78190FF06D00991983 /* LogInDown.png */; };
 		73E61C7C190FF1EE00991983 /* loginlogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73E61C7B190FF1EE00991983 /* loginlogo@2x.png */; };
 		73E61C7E190FF3C000991983 /* SignUpFieldBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 73E61C7D190FF3C000991983 /* SignUpFieldBG.png */; };
+		73E61C80190FF6EB00991983 /* plum@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73E61C7F190FF6EB00991983 /* plum@2x.png */; };
+		73E61C82190FF74300991983 /* collection.png in Resources */ = {isa = PBXBuildFile; fileRef = 73E61C81190FF74300991983 /* collection.png */; };
+		73E61C84190FF7B800991983 /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = 73E61C83190FF7B800991983 /* logout.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +158,9 @@
 		73E61C78190FF06D00991983 /* LogInDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LogInDown.png; path = Plum/img/LogInDown.png; sourceTree = "<group>"; };
 		73E61C7B190FF1EE00991983 /* loginlogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "loginlogo@2x.png"; path = "Plum/img/loginlogo@2x.png"; sourceTree = "<group>"; };
 		73E61C7D190FF3C000991983 /* SignUpFieldBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SignUpFieldBG.png; path = Plum/img/SignUpFieldBG.png; sourceTree = "<group>"; };
+		73E61C7F190FF6EB00991983 /* plum@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "plum@2x.png"; path = "Plum/img/plum@2x.png"; sourceTree = "<group>"; };
+		73E61C81190FF74300991983 /* collection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = collection.png; path = Plum/img/collection.png; sourceTree = "<group>"; };
+		73E61C83190FF7B800991983 /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logout.png; path = Plum/img/logout.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,12 +302,15 @@
 			children = (
 				73E61C66190FDF2100991983 /* plus.png */,
 				73E61C67190FDF2100991983 /* plus@2x.png */,
+				73E61C7F190FF6EB00991983 /* plum@2x.png */,
 				73E61C71190FED4500991983 /* LoginFieldBG.png */,
 				73E61C77190FF06D00991983 /* LogIn.png */,
 				73E61C7B190FF1EE00991983 /* loginlogo@2x.png */,
 				73E61C7D190FF3C000991983 /* SignUpFieldBG.png */,
 				73E61C78190FF06D00991983 /* LogInDown.png */,
+				73E61C83190FF7B800991983 /* logout.png */,
 				73DAD7A7190C4D1A00027244 /* plum_logo.png */,
+				73E61C81190FF74300991983 /* collection.png */,
 				73E61C73190FEE7000991983 /* SignUp.png */,
 				73E61C74190FEE7000991983 /* SignUpDown.png */,
 				73DAD7A8190C4D1A00027244 /* plum_logo@2x.png */,
@@ -451,14 +460,17 @@
 				7336530E190F5A5700538335 /* trading_card_placeholder.png in Resources */,
 				7309B0361909D0C800ACCD5E /* Images.xcassets in Resources */,
 				73E61C68190FDF2100991983 /* plus.png in Resources */,
+				73E61C84190FF7B800991983 /* logout.png in Resources */,
 				73DAD7A9190C4D1A00027244 /* plum_logo.png in Resources */,
 				73DAD792190C1C8400027244 /* TradingCardCell.xib in Resources */,
 				73E61C7E190FF3C000991983 /* SignUpFieldBG.png in Resources */,
 				73DAD7AA190C4D1A00027244 /* plum_logo@2x.png in Resources */,
 				73E61C72190FED4500991983 /* LoginFieldBG.png in Resources */,
 				73DAD7A5190C4AB500027244 /* menu.png in Resources */,
+				73E61C82190FF74300991983 /* collection.png in Resources */,
 				73DAD7AD190C540D00027244 /* dolrea.png in Resources */,
 				73E61C69190FDF2100991983 /* plus@2x.png in Resources */,
+				73E61C80190FF6EB00991983 /* plum@2x.png in Resources */,
 				73E61C7A190FF06D00991983 /* LogInDown.png in Resources */,
 				7309B0571909E1DF00ACCD5E /* anna.jpg in Resources */,
 				73E61C79190FF06D00991983 /* LogIn.png in Resources */,
