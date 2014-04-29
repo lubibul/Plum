@@ -25,37 +25,8 @@
     
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0x9074a0)];
-
-//    PFObject *newTradingCard = [PFObject objectWithClassName:@"TradingCard"];
-//    newTradingCard[@"name"] = @"Dolrea";
-//    newTradingCard[@"subtitle"] = @"Eye Type";
-//    newTradingCard[@"description1"] = @"The Dolrea is a land creature that enjoys hot days in the sun and cool baths in the evening.";
-//    UIImage *image;
-//    image = [UIImage imageNamed:@"dolrea.png"];
-//    NSData *imageData = UIImageJPEGRepresentation(image, 1.0f);
-//    PFFile *imageFile = [PFFile fileWithName:@"dolrea.png" data:imageData];
-//    newTradingCard[@"pictureFile"] = imageFile;
-//    
-//    [newTradingCard saveInBackground];
     
-//    PFObject *newChapter = [PFObject objectWithClassName:@"Chapter"];
-//    newChapter[@"title"] = @"Fishbones: Chapter 1";
-//    newChapter[@"author"] = @"Jisuk Cho";
-//    newChapter[@"preview"] = @"Ferris was running.\nHe didn’t run very often and wasn’t what one would call ‘good at it.’ He had only been running for a few blocks and could already feel his legs protesting. Of course, he wasn’t dressed for the occasion, nor had he woken up with a fist in his palm and the firm intent to go for a few laps around his neighborhood. In fact, the only reason that his shoes were pounding so hard against the wet pavement, that his sweater was starting to make him sweat, and that his scarf had fluttered off into a gutter ten yards back, was that he was being chased.";
-//    newChapter[@"content"] = @"THIS IS A BUNCH OF CHAPTER CONTENT";
-//    [newChapter saveInBackground];
-//    
-//    PFObject *newCard = [PFObject objectWithClassName:@"Card"];
-//    newCard[@"type"] = @"story";
-//
-//    NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
-//    [formatter setDateFormat:@"MM-dd-yyyy"];
-//    NSDate *showDate = [formatter dateFromString:@"04-27-2014"];
-//    newCard[@"showDate"] = showDate;
-//    
-//    newCard[@"content"] = newChapter;
-//    
-//    [newCard saveInBackground];
+    
     
     return YES;
 }

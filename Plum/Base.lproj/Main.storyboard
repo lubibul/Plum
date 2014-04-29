@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="pGg-6v-bdr" kind="relationship" relationship="rootViewController" id="RxB-wf-QIq"/>
+                        <segue destination="PLb-0t-KSy" kind="relationship" relationship="rootViewController" id="LFF-ES-eRA"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eq9-QA-ai8" sceneMemberID="firstResponder"/>
@@ -80,6 +80,28 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fa1-Rn-koD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1" y="-618"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="UQJ-EH-kcn">
+            <objects>
+                <viewController id="PLb-0t-KSy" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3We-Rd-lmD"/>
+                        <viewControllerLayoutGuide type="bottom" id="zuH-ip-f6D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RzW-wf-QJR">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gmF-MH-gah"/>
+                    <connections>
+                        <segue destination="pGg-6v-bdr" kind="push" identifier="showMainView" id="tRM-nn-n7M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cmA-Oo-6zA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="459" y="-618"/>
         </scene>
         <!--Plum Master View Controller - Master-->
         <scene sceneID="VgW-fR-Quf">

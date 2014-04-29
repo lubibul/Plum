@@ -23,7 +23,6 @@
 		7309B0491909D0C800ACCD5E /* PlumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7309B0481909D0C800ACCD5E /* PlumTests.m */; };
 		7309B0541909D9A900ACCD5E /* PlumCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7309B0531909D9A900ACCD5E /* PlumCardCell.m */; };
 		7309B0571909E1DF00ACCD5E /* anna.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7309B0561909E1DF00ACCD5E /* anna.jpg */; };
-		7309B059190A07A500ACCD5E /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 7309B058190A07A500ACCD5E /* background.png */; };
 		7309B05C190A184500ACCD5E /* TradingCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7309B05B190A184500ACCD5E /* TradingCardCell.m */; };
 		7309B05F190A240000ACCD5E /* StoryCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7309B05E190A240000ACCD5E /* StoryCardCell.m */; };
 		731E212F190D74B900C02B6D /* CardFlipSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 731E212E190D74B900C02B6D /* CardFlipSegue.m */; };
@@ -49,6 +48,11 @@
 		73DAD7AA190C4D1A00027244 /* plum_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73DAD7A8190C4D1A00027244 /* plum_logo@2x.png */; };
 		73DAD7AD190C540D00027244 /* dolrea.png in Resources */ = {isa = PBXBuildFile; fileRef = 73DAD7AC190C540D00027244 /* dolrea.png */; };
 		73DAD7B0190C5B3700027244 /* StoryCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73DAD7AF190C5B3700027244 /* StoryCardCell.xib */; };
+		73E61C58190F689800991983 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E61C57190F689800991983 /* LoginViewController.m */; };
+		73E61C5A190F6B9200991983 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E61C59190F6B9200991983 /* Accounts.framework */; };
+		73E61C5C190F6B9B00991983 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E61C5B190F6B9A00991983 /* AdSupport.framework */; };
+		73E61C5E190F6BBA00991983 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E61C5D190F6BBA00991983 /* Social.framework */; };
+		73E61C60190F6BCF00991983 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E61C5F190F6BCF00991983 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +88,6 @@
 		7309B0521909D9A900ACCD5E /* PlumCardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlumCardCell.h; sourceTree = "<group>"; };
 		7309B0531909D9A900ACCD5E /* PlumCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlumCardCell.m; sourceTree = "<group>"; };
 		7309B0561909E1DF00ACCD5E /* anna.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = anna.jpg; path = Plum/img/anna.jpg; sourceTree = "<group>"; };
-		7309B058190A07A500ACCD5E /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = Plum/img/background.png; sourceTree = "<group>"; };
 		7309B05A190A184500ACCD5E /* TradingCardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradingCardCell.h; sourceTree = "<group>"; };
 		7309B05B190A184500ACCD5E /* TradingCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradingCardCell.m; sourceTree = "<group>"; };
 		7309B05D190A240000ACCD5E /* StoryCardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryCardCell.h; sourceTree = "<group>"; };
@@ -117,6 +120,12 @@
 		73DAD7A8190C4D1A00027244 /* plum_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "plum_logo@2x.png"; path = "Plum/img/plum_logo@2x.png"; sourceTree = "<group>"; };
 		73DAD7AC190C540D00027244 /* dolrea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dolrea.png; sourceTree = "<group>"; };
 		73DAD7AF190C5B3700027244 /* StoryCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoryCardCell.xib; sourceTree = "<group>"; };
+		73E61C56190F689800991983 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		73E61C57190F689800991983 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		73E61C59190F6B9200991983 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		73E61C5B190F6B9A00991983 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		73E61C5D190F6BBA00991983 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		73E61C5F190F6BCF00991983 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +133,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73E61C60190F6BCF00991983 /* libsqlite3.dylib in Frameworks */,
+				73E61C5E190F6BBA00991983 /* Social.framework in Frameworks */,
+				73E61C5C190F6B9B00991983 /* AdSupport.framework in Frameworks */,
+				73E61C5A190F6B9200991983 /* Accounts.framework in Frameworks */,
 				73455182190DC77200F55D98 /* SystemConfiguration.framework in Frameworks */,
 				73455180190DC76C00F55D98 /* StoreKit.framework in Frameworks */,
 				7345517E190DC76300F55D98 /* Security.framework in Frameworks */,
@@ -175,6 +188,10 @@
 		7309B0191909D0C800ACCD5E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				73E61C5F190F6BCF00991983 /* libsqlite3.dylib */,
+				73E61C5D190F6BBA00991983 /* Social.framework */,
+				73E61C5B190F6B9A00991983 /* AdSupport.framework */,
+				73E61C59190F6B9200991983 /* Accounts.framework */,
 				73455181190DC77200F55D98 /* SystemConfiguration.framework */,
 				7345517F190DC76C00F55D98 /* StoreKit.framework */,
 				7345517D190DC76300F55D98 /* Security.framework */,
@@ -199,6 +216,8 @@
 				7309B0291909D0C800ACCD5E /* PlumAppDelegate.h */,
 				7309B02A1909D0C800ACCD5E /* PlumAppDelegate.m */,
 				7309B02C1909D0C800ACCD5E /* Main.storyboard */,
+				73E61C56190F689800991983 /* LoginViewController.h */,
+				73E61C57190F689800991983 /* LoginViewController.m */,
 				73DAD79E190C3DBA00027244 /* SidebarViewController.h */,
 				73DAD79F190C3DBA00027244 /* SidebarViewController.m */,
 				73DAD7AE190C545800027244 /* Cards */,
@@ -250,7 +269,6 @@
 				7336530D190F5A5700538335 /* trading_card_placeholder.png */,
 				73DAD7A3190C4AB500027244 /* menu.png */,
 				73DAD7A4190C4AB500027244 /* menu@2x.png */,
-				7309B058190A07A500ACCD5E /* background.png */,
 				7309B0561909E1DF00ACCD5E /* anna.jpg */,
 			);
 			name = img;
@@ -378,7 +396,6 @@
 				7336530E190F5A5700538335 /* trading_card_placeholder.png in Resources */,
 				7309B0361909D0C800ACCD5E /* Images.xcassets in Resources */,
 				73DAD7A9190C4D1A00027244 /* plum_logo.png in Resources */,
-				7309B059190A07A500ACCD5E /* background.png in Resources */,
 				73DAD792190C1C8400027244 /* TradingCardCell.xib in Resources */,
 				73DAD7AA190C4D1A00027244 /* plum_logo@2x.png in Resources */,
 				73DAD7A5190C4AB500027244 /* menu.png in Resources */,
@@ -412,6 +429,7 @@
 				73DAD799190C3B7600027244 /* SWRevealViewController.m in Sources */,
 				7309B0541909D9A900ACCD5E /* PlumCardCell.m in Sources */,
 				731E212F190D74B900C02B6D /* CardFlipSegue.m in Sources */,
+				73E61C58190F689800991983 /* LoginViewController.m in Sources */,
 				7309B0311909D0C800ACCD5E /* PlumMasterViewController.m in Sources */,
 				7309B0271909D0C800ACCD5E /* main.m in Sources */,
 				7309B05C190A184500ACCD5E /* TradingCardCell.m in Sources */,
