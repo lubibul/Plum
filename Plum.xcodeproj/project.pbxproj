@@ -69,6 +69,7 @@
 		73E61C80190FF6EB00991983 /* plum@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73E61C7F190FF6EB00991983 /* plum@2x.png */; };
 		73E61C82190FF74300991983 /* collection.png in Resources */ = {isa = PBXBuildFile; fileRef = 73E61C81190FF74300991983 /* collection.png */; };
 		73E61C84190FF7B800991983 /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = 73E61C83190FF7B800991983 /* logout.png */; };
+		73E61C86190FF8BD00991983 /* collectiontitle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73E61C85190FF8BD00991983 /* collectiontitle@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,6 +162,7 @@
 		73E61C7F190FF6EB00991983 /* plum@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "plum@2x.png"; path = "Plum/img/plum@2x.png"; sourceTree = "<group>"; };
 		73E61C81190FF74300991983 /* collection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = collection.png; path = Plum/img/collection.png; sourceTree = "<group>"; };
 		73E61C83190FF7B800991983 /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logout.png; path = Plum/img/logout.png; sourceTree = "<group>"; };
+		73E61C85190FF8BD00991983 /* collectiontitle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "collectiontitle@2x.png"; path = "Plum/img/collectiontitle@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,6 +310,7 @@
 				73E61C7B190FF1EE00991983 /* loginlogo@2x.png */,
 				73E61C7D190FF3C000991983 /* SignUpFieldBG.png */,
 				73E61C78190FF06D00991983 /* LogInDown.png */,
+				73E61C85190FF8BD00991983 /* collectiontitle@2x.png */,
 				73E61C83190FF7B800991983 /* logout.png */,
 				73DAD7A7190C4D1A00027244 /* plum_logo.png */,
 				73E61C81190FF74300991983 /* collection.png */,
@@ -459,6 +462,7 @@
 				73DAD7B0190C5B3700027244 /* StoryCardCell.xib in Resources */,
 				7336530E190F5A5700538335 /* trading_card_placeholder.png in Resources */,
 				7309B0361909D0C800ACCD5E /* Images.xcassets in Resources */,
+				73E61C86190FF8BD00991983 /* collectiontitle@2x.png in Resources */,
 				73E61C68190FDF2100991983 /* plus.png in Resources */,
 				73E61C84190FF7B800991983 /* logout.png in Resources */,
 				73DAD7A9190C4D1A00027244 /* plum_logo.png in Resources */,

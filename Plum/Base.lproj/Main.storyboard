@@ -147,11 +147,11 @@
                         <viewControllerLayoutGuide type="bottom" id="zuH-ip-f6D"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="RzW-wf-QJR">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="wK3-yU-MvD">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
@@ -308,7 +308,7 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="Mc9-yh-Jvj"/>
-        <segue reference="Sgd-7j-8FL"/>
         <segue reference="wk7-X7-nCx"/>
+        <segue reference="LFF-ES-eRA"/>
     </inferredMetricsTieBreakers>
 </document>

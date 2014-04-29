@@ -55,7 +55,7 @@
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     
     self.tableView.backgroundColor = UIColorFromRGB(0xdedede);
-    self.navigationItem.title = @"My Collection";
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"collectiontitle.png"]];
     
     if (!self.cards) {
         self.cards = [[NSMutableArray alloc] init];
@@ -76,18 +76,6 @@
     [super viewWillAppear:animated];
     // set navigation bar's tint color when being shown
     self.navigationController.navigationBar.barTintColor = UIColorFromRGB(0x75b4ce);
-//    UILabel *titleView = (UILabel *)self.navigationItem.titleView;
-//    if (!titleView) {
-//        titleView = [[UILabel alloc] initWithFrame:CGRectZero];
-//        titleView.backgroundColor = [UIColor clearColor];
-//        titleView.font = [UIFont boldSystemFontOfSize:20.0];
-//        titleView.shadowColor = [UIColor colorWithWhite:0.0 alpha:0.5];
-//        
-//        titleView.textColor = [UIColor yellowColor]; // Change to desired color
-//        
-//        self.navigationItem.titleView = titleView;
-//    }
-//    self.navigationItem.titleView.tintColor = [UIColor whiteColor];
 }
 - (void)findCollectedCards:(NSArray *)objects error:(NSError *)error {
     if (!error) {
