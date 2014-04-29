@@ -7,6 +7,7 @@
 //
 
 #import "ChapterDetailView.h"
+#import <Parse/Parse.h>
 
 @interface ChapterDetailView ()
 - (void)configureView;
@@ -18,8 +19,20 @@
 
 - (void)setDetailItem:(id)newDetailItem
 {
-    if (_detailItem != newDetailItem) {
-        _detailItem = newDetailItem;
+    // takes in a PFObject
+    PFObject *chapter = (PFObject *)newDetailItem;
+    [self setTitle:chapter[@"title"] setAuthor:chapter[@"author"] setContent:chapter[@"content"]];
+}
+
+- (void)setTitle:(NSString *)title
+       setAuthor:(NSString *)author
+      setContent:(NSString *)content
+{
+
+    if (_titleItem != title) {
+        _titleItem = title;
+        _authorItem = author;
+        _contentItem = content;
         
         // Update the view.
         [self configureView];
@@ -30,8 +43,10 @@
 {
     // Update the user interface for the detail item.
     
-    if (self.detailItem) {
-        self.chapterContentLabel.text = [self.detailItem description];
+    if (self.titleItem) {
+        self.titleLabel.text = self.titleItem;
+        self.authorLabel.text = self.authorItem;
+        self.chapterContent.text = self.contentItem;
     }
 }
 

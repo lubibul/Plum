@@ -9,8 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface ChapterDetailView : UIViewController
-@property (strong, nonatomic) id detailItem;
+@property (strong, nonatomic) NSString *titleItem;
+@property (strong, nonatomic) NSString *authorItem;
+@property (strong, nonatomic) NSString *contentItem;
 
-@property (strong, nonatomic) IBOutlet UILabel *chapterContentLabel;
+@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
+@property (strong, nonatomic) IBOutlet UILabel *authorLabel;
+@property (strong, nonatomic) IBOutlet UITextView *chapterContent;
+
 
 @end

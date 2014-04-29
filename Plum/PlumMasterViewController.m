@@ -175,7 +175,7 @@
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         PFObject *card = self.cards[indexPath.row];
         PFObject *chapter = card[@"chapterPointer"];
-        [[segue destinationViewController] setDetailItem:chapter[@"content"]];
+        [[segue destinationViewController] setDetailItem:chapter];
     }
 }
 

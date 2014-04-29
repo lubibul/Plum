@@ -34,8 +34,6 @@
     [self.tradingPicture loadInBackground];
     self.tradingPicture.backgroundColor = (UIColorFromRGB(0xf1f1f1));
     
-//    self.tradingPicture = creature;
-    
     self.nameLabel.text = name;
     self.subtitleLabel.text = subtitle;
     self.descriptionLabel.text = description;
