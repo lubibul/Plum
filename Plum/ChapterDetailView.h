@@ -17,5 +17,5 @@
 @property (strong, nonatomic) IBOutlet UILabel *authorLabel;
 @property (strong, nonatomic) IBOutlet UITextView *chapterContent;
 
-
+- (void)setDetailItem:(id)newDetailItem;
 @end

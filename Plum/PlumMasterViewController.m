@@ -170,6 +170,8 @@
     
     if ([myCard[@"type"] isEqualToString:@"chapter"]) {
         [self  performSegueWithIdentifier:@"storyDetail" sender:self];
+    } else {
+        [self  performSegueWithIdentifier:@"tradingDetail" sender:self];
     }
 }
 
@@ -188,6 +190,11 @@
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         PFObject *card = self.cards[indexPath.row];
         PFObject *chapter = card[@"chapterPointer"];
+        [[segue destinationViewController] setDetailItem:chapter];
+    } else {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        PFObject *card = self.cards[indexPath.row];
+        PFObject *chapter = card[@"tradingCardPointer"];
         [[segue destinationViewController] setDetailItem:chapter];
     }
 }

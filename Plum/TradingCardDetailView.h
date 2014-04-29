@@ -7,10 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface TradingCardDetailView : UIViewController
-@property (strong, nonatomic) id detailItem;
+@property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) NSString *subtitle;
+@property (strong, nonatomic) NSString *description;
+@property (strong, nonatomic) PFFile *file;
 
-@property (strong, nonatomic) IBOutlet UILabel *tradingContentLabel;
+@property (strong, nonatomic) IBOutlet PFImageView *tradingPicture;
+@property (strong, nonatomic) IBOutlet UILabel *nameLabel;
+@property (strong, nonatomic) IBOutlet UILabel *subtitleLabel;
+@property (strong, nonatomic) IBOutlet UILabel *descriptionLabel;
 
+- (void)setDetailItem:(id)newDetailItem;
 @end

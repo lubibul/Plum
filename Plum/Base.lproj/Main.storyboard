@@ -187,6 +187,7 @@
                     <connections>
                         <outlet property="sidebarButton" destination="Pgm-0x-Kwq" id="WZa-mI-NbX"/>
                         <segue destination="1MM-dy-rOB" kind="custom" identifier="storyDetail" customClass="CardFlipSegue" id="f6S-dG-LBW"/>
+                        <segue destination="Ah7-4n-0Wa" kind="custom" identifier="tradingDetail" customClass="CardFlipSegue" id="iHm-a5-ded"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Cn-md-YlS" sceneMemberID="firstResponder"/>
@@ -274,19 +275,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trading Card Content" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="SzX-wo-FmU">
-                                <rect key="frame" x="20" y="20" width="280" height="528"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8td-Om-HGe">
+                                <rect key="frame" x="17" y="20" width="287" height="411"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AlN-N3-iiR" customClass="PFImageView">
+                                        <rect key="frame" x="20" y="20" width="247" height="247"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bH7-Ao-yhG">
+                                        <rect key="frame" x="20" y="275" width="165" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Dl-dp-EkJ">
+                                        <rect key="frame" x="20" y="296" width="165" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fudo enjoys long walks on the beach and cupcakes. Can evolve into an Angel Fudo or a Demon Fudo." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="247" translatesAutoresizingMaskIntoConstraints="NO" id="PZj-13-V1e">
+                                        <rect key="frame" x="20" y="325" width="247" height="66"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="cra-N8-TIN"/>
                     <connections>
-                        <outlet property="tradingContentLabel" destination="SzX-wo-FmU" id="xVI-7M-WCh"/>
+                        <outlet property="descriptionLabel" destination="PZj-13-V1e" id="QTw-jg-6jU"/>
+                        <outlet property="nameLabel" destination="bH7-Ao-yhG" id="dSu-V8-f0r"/>
+                        <outlet property="subtitleLabel" destination="2Dl-dp-EkJ" id="CfM-m9-o1q"/>
+                        <outlet property="tradingPicture" destination="AlN-N3-iiR" id="Af6-Eo-0qX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lrm-kH-fPn" sceneMemberID="firstResponder"/>
@@ -308,7 +335,7 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="Mc9-yh-Jvj"/>
-        <segue reference="wk7-X7-nCx"/>
+        <segue reference="f6S-dG-LBW"/>
         <segue reference="LFF-ES-eRA"/>
     </inferredMetricsTieBreakers>
 </document>

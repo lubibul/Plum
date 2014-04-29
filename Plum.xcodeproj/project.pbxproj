@@ -352,8 +352,6 @@
 			children = (
 				7309B0521909D9A900ACCD5E /* PlumCardCell.h */,
 				7309B0531909D9A900ACCD5E /* PlumCardCell.m */,
-				73455186190DD5B600F55D98 /* TradingCardDetailView.h */,
-				73455187190DD5B600F55D98 /* TradingCardDetailView.m */,
 				73DAD7AF190C5B3700027244 /* StoryCardCell.xib */,
 				73DAD791190C1C8400027244 /* TradingCardCell.xib */,
 				7309B05D190A240000ACCD5E /* StoryCardCell.h */,
@@ -362,6 +360,8 @@
 				7309B05B190A184500ACCD5E /* TradingCardCell.m */,
 				73455183190DD12400F55D98 /* ChapterDetailView.h */,
 				73455184190DD12400F55D98 /* ChapterDetailView.m */,
+				73455186190DD5B600F55D98 /* TradingCardDetailView.h */,
+				73455187190DD5B600F55D98 /* TradingCardDetailView.m */,
 			);
 			name = Cards;
 			sourceTree = "<group>";
