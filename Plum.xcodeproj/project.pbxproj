@@ -55,6 +55,8 @@
 		73E61C60190F6BCF00991983 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E61C5F190F6BCF00991983 /* libsqlite3.dylib */; };
 		73E61C62190F738800991983 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73E61C61190F738800991983 /* background.jpg */; };
 		73E61C65190F7F1C00991983 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E61C64190F7F1C00991983 /* CollectionViewController.m */; };
+		73E61C68190FDF2100991983 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 73E61C66190FDF2100991983 /* plus.png */; };
+		73E61C69190FDF2100991983 /* plus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 73E61C67190FDF2100991983 /* plus@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +133,8 @@
 		73E61C61190F738800991983 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = Plum/img/background.jpg; sourceTree = "<group>"; };
 		73E61C63190F7F1C00991983 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
 		73E61C64190F7F1C00991983 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		73E61C66190FDF2100991983 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plus.png; path = Plum/img/plus.png; sourceTree = "<group>"; };
+		73E61C67190FDF2100991983 /* plus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "plus@2x.png"; path = "Plum/img/plus@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +275,8 @@
 		7309B0551909E1C500ACCD5E /* img */ = {
 			isa = PBXGroup;
 			children = (
+				73E61C66190FDF2100991983 /* plus.png */,
+				73E61C67190FDF2100991983 /* plus@2x.png */,
 				73DAD7A7190C4D1A00027244 /* plum_logo.png */,
 				73DAD7A8190C4D1A00027244 /* plum_logo@2x.png */,
 				7336530D190F5A5700538335 /* trading_card_placeholder.png */,
@@ -404,11 +410,13 @@
 				73DAD7B0190C5B3700027244 /* StoryCardCell.xib in Resources */,
 				7336530E190F5A5700538335 /* trading_card_placeholder.png in Resources */,
 				7309B0361909D0C800ACCD5E /* Images.xcassets in Resources */,
+				73E61C68190FDF2100991983 /* plus.png in Resources */,
 				73DAD7A9190C4D1A00027244 /* plum_logo.png in Resources */,
 				73DAD792190C1C8400027244 /* TradingCardCell.xib in Resources */,
 				73DAD7AA190C4D1A00027244 /* plum_logo@2x.png in Resources */,
 				73DAD7A5190C4AB500027244 /* menu.png in Resources */,
 				73DAD7AD190C540D00027244 /* dolrea.png in Resources */,
+				73E61C69190FDF2100991983 /* plus@2x.png in Resources */,
 				7309B0571909E1DF00ACCD5E /* anna.jpg in Resources */,
 				7309B0251909D0C800ACCD5E /* InfoPlist.strings in Resources */,
 				7309B02E1909D0C800ACCD5E /* Main.storyboard in Resources */,

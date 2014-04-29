@@ -61,11 +61,14 @@
         self.cards = [[NSMutableArray alloc] init];
     }
     
-    PFQuery *query;
-    query = [PFQuery queryWithClassName:@"Card"];
+    PFUser *currentUser = [PFUser currentUser];
+    PFRelation *relation;
+    relation = [currentUser relationforKey:@"collected"];
+    
+    PFQuery *query = [relation query];
     [query includeKey:@"tradingCardPointer"];
     [query includeKey:@"chapterPointer"];
-    [query findObjectsInBackgroundWithTarget:self selector:@selector(findCallback:error:)];
+    [query findObjectsInBackgroundWithTarget:self selector:@selector(findCollectedCards:error:)];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -86,8 +89,7 @@
 //    }
 //    self.navigationItem.titleView.tintColor = [UIColor whiteColor];
 }
-
-- (void)findCallback:(NSArray *)objects error:(NSError *)error {
+- (void)findCollectedCards:(NSArray *)objects error:(NSError *)error {
     if (!error) {
         // The find succeeded.
         NSLog(@"Successfully retrieved %d cards.", (int)objects.count);

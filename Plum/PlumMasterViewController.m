@@ -133,6 +133,11 @@
                             withSubtitle:tradingCard[@"subtitle"]
                         withDescription:tradingCard[@"description1"]];
         
+//        PFUser *user = [PFUser currentUser];
+//        PFRelation *relation = [user relationforKey:@"collected"];
+//        [relation addObject:myCard];
+//        [user saveInBackground];
+        
         return cell;
     } else if ([CellIdentifier isEqualToString:@"StoryCard"]) {
         StoryCardCell *cell = (StoryCardCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -170,6 +175,15 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    // Set the add bar button action.
+    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"plus.png"]
+                                                                  style:UIBarButtonItemStylePlain
+                                                                 target:self
+                                                                 action:@selector(addCard:)];
+
+    UINavigationController *destViewController = (UINavigationController*)segue.destinationViewController;
+    destViewController.navigationItem.rightBarButtonItem = addButton;
+    
     if ([[segue identifier] isEqualToString:@"storyDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         PFObject *card = self.cards[indexPath.row];
@@ -178,4 +192,15 @@
     }
 }
 
+- (IBAction)addCard:(id)sender
+{
+    NSLog(@"added this card");
+    
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    PFObject *myCard = [self.cards objectAtIndex:indexPath.row];
+    PFUser *user = [PFUser currentUser];
+    PFRelation *relation = [user relationforKey:@"collected"];
+    [relation addObject:myCard];
+    [user saveInBackground];
+}
 @end
