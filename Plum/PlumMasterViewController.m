@@ -194,13 +194,21 @@
 
 - (IBAction)addCard:(id)sender
 {
-    NSLog(@"added this card");
-    
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
     PFObject *myCard = [self.cards objectAtIndex:indexPath.row];
     PFUser *user = [PFUser currentUser];
     PFRelation *relation = [user relationforKey:@"collected"];
-    [relation addObject:myCard];
-    [user saveInBackground];
+
+    PFQuery *query = [relation query];
+    [query whereKey:@"objectId" equalTo:myCard.objectId];
+    [query countObjectsInBackgroundWithBlock:^(int count, NSError *error) {
+        if (count == 0) {
+            NSLog(@"added this card");
+            [relation addObject:myCard];
+            [user saveInBackground];
+        } else {
+            NSLog(@"duplicate card. didn't add");
+        }
+    }];
 }
 @end
