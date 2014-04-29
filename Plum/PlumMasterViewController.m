@@ -158,20 +158,12 @@
     
     if ([myCard[@"type"] isEqualToString:@"chapter"]) {
         [self  performSegueWithIdentifier:@"storyDetail" sender:self];
-    } else {
-        [self  performSegueWithIdentifier:@"tradingDetail" sender:self];
     }
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"tradingDetail"]) {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        PFObject *card = self.cards[indexPath.row];
-        PFObject *tradingCard = card[@"tradingCardPointer"];
-        NSString *name = tradingCard[@"name"];
-        [[segue destinationViewController] setDetailItem:name];
-    } else if ([[segue identifier] isEqualToString:@"storyDetail"]) {
+    if ([[segue identifier] isEqualToString:@"storyDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         PFObject *card = self.cards[indexPath.row];
         PFObject *chapter = card[@"chapterPointer"];

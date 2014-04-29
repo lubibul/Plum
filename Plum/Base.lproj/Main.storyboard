@@ -101,7 +101,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="sidebarButton" destination="Pgm-0x-Kwq" id="WZa-mI-NbX"/>
-                        <segue destination="Ah7-4n-0Wa" kind="custom" identifier="tradingDetail" customClass="CardFlipSegue" id="ply-pm-Jl4"/>
                         <segue destination="1MM-dy-rOB" kind="custom" identifier="storyDetail" customClass="CardFlipSegue" id="f6S-dG-LBW"/>
                     </connections>
                 </tableViewController>
